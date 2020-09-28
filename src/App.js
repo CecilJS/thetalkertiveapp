@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Developer from './components/Developer';
 import Client from './components/Client';
+import Contact from './components/Contact';
 import Team from './components/Team';
 import Footer from './components/Footer';
 
@@ -39,6 +40,11 @@ import Footer from './components/Footer';
         <Route exact path="/team" component={Team}>
        
         </Route>
+        
+        <Route exact path="/contact" component={Contact}>
+       
+        </Route>
+
       </Switch>
       <Footer/>
     </div>

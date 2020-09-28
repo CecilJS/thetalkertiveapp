@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 h1{
     color: #7F817E!important;
-    font-size: 8em!important;
+    font-size: 7em!important;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -21,6 +21,15 @@ p{
     font-family: 'Open Sans', sans-serif;   
 }
 
+#learn-more {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2em!important;
+    height: 100px;
+    width: 50%;
+
+}
+
+
 #custom-nav{
 
     background-color: #ffffff!important;
@@ -28,10 +37,12 @@ p{
     border-bottom: none!important;
     box-shadow: none!important;
     margin-top: 1.5%;
+    
 }
 
+
 #custom-nav ul a, 
-#custom-nav .brand-logo  {
+#custom-nav #brand {
     color: #7F817E!important;
     font-family: 'Open Sans', sans-serif;
 
@@ -42,12 +53,43 @@ p{
     margin-right: 15px;
 }
 
-#custom-nav .brand-logo{
-    font-size: 1.5em;
+#custom-nav #brand{
+    font-size: 1.3em;
     position: relative;
     bottom: 20%;
+    font-weight: bold;
    
     
+}
+
+#toggler {
+    position: absolute;
+    right: 20%;
+    bottom: 91%;
+    left: 85%;
+    cursor: pointer;
+    border: 2px solid #7F817E;
+    border-radius: 50%;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+} 
+
+#toggler div:nth-of-type(1){
+    height: 3px;
+    width: 25px;
+    background-color: #7F817E;
+    position: relative;
+    right: 25%;
+}
+
+#toggler div:nth-of-type(2){
+    height: 20px;
+    width: 3px;
+    margin-top: 5px;
+    position: relative;
+    left: 45%;
+    background-color: #7F817E;
 }
 
 #sub-section{
@@ -74,8 +116,8 @@ p{
 #journey{
     margin-top: 15%;
     padding: 2%;
-    border: 1px solid #7F817E;
-    background-color: #2FB4B4!important;
+    
+   
 }
 
 #dev-path {
@@ -92,19 +134,52 @@ p{
     color: #7F817E!important;
     background-color: #ffffff!important;
     height: 100%;
-    margin: 0;
+    margin-bottom: 5%;
 }
+
+#client-path  p {
+    margin-bottom: 23%;
+
+}
+
 
 #footer{
     background-color: #ffffff!important;
     color: #7F817E!important;
+    
 }
 
 #copyright-section{
     background-color: #ffffff!important;
     color: #7F817E!important;
+    border-top: 1px solid #7F817E;
 }
 
 #copyright-section i {
     color: #7F817E!important;
+    margin-top: 3.5%;
+}
+
+#legal-notices li, #legal-notices a {
+    display: inline;
+    margin: 10px;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+Responsive code for mobile
+
+*/ 
+
+@media(max-width: 703px){
+
+    #learn-more {
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 1.2em!important;
+        height: 100px;
+        width: 70%;
+        margin-bottom: 20%;
+    
+    }
 }

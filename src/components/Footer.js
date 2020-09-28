@@ -1,19 +1,28 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
     render() {
         return (
-            <footer className="page-footer" id="footer">
-                <div className="footer-copyright" id="copyright-section">
-                    <div className="container">
-                    © 2020 Copyright The Talkertive. All Right Reserved.
-                   
-                    <a className="grey-text text-lighten-4 right" href="#!"><i className="material-icons right">facebook</i></a>
-                    <a className="grey-text text-lighten-4 right" href="#!"><i className="material-icons right">facebook</i></a>
-                    <a className="grey-text text-lighten-4 right" href="#!"><i className="material-icons right">facebook</i></a>
+            
+                <footer className=" row container" id="copyright-section">
+                    <div className="container col l4 m12 s12">
+                      <p>The Talkertive © 2020 Copyright - All Right Reserved.</p> 
                     </div>
-                </div>
-        </footer>
+                    <div className="container col l4 m12 s12" id="legal-notices">
+                    <ul>
+                      <li><Link to="/">Privacy Policy</Link></li>
+                      <li><Link to="/">Terms and Conditions</Link></li>
+                    </ul>
+                  
+                    </div>
+                    <div className="col l4 m12 s12">
+                    <a href="#!"><i className="material-icons left">facebook</i></a>
+                    <a  href="#!"><i className="material-icons left">facebook</i></a>
+                    <a  href="#!"><i className="material-icons left">facebook</i></a>
+                    </div>
+                </footer>
+      
         )
     }
 }
