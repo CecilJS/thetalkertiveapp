@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h1{
+    color: #7F817E!important;
+    font-size: 8em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#cta {
+    margin-top: 10%;
+}
+
+#cta p{
+    font-size: 4em;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;   
+}
+
+#custom-nav{
+
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+    border-bottom: none!important;
+    box-shadow: none!important;
+    margin-top: 1.5%;
+}
+
+#custom-nav ul a, 
+#custom-nav .brand-logo  {
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#custom-nav img {
+    margin-top: 8px;
+    margin-right: 15px;
+}
+
+#custom-nav .brand-logo{
+    font-size: 1.5em;
+    position: relative;
+    bottom: 20%;
+   
+    
+}
+
+#sub-section{
+ border: 1px solid #2FB4B4;
+ margin-top: 10%;
+ padding: 20px;
+}
+
+#sub-section p, #project-request p {
+    font-size: 3em;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#project-request{
+
+    margin-top: 15%;
+}
+
+#project-request p:nth-of-type(2){
+    font-size: 2em!important;
+}
+
+#journey{
+    margin-top: 15%;
+    padding: 2%;
+    border: 1px solid #7F817E;
+    background-color: #2FB4B4!important;
+}
+
+#dev-path {
+
+    background-color: #2FB4B4!important;
+    font-size: 3em;
+    padding: 5%;
+    color: #ffffff!important;
+}
+
+#client-path {
+    font-size: 3em;
+    padding: 5%;
+    color: #7F817E!important;
+    background-color: #ffffff!important;
+    height: 100%;
+    margin: 0;
+}
+
+#footer{
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+}
+
+#copyright-section{
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+}
+
+#copyright-section i {
+    color: #7F817E!important;
+}
