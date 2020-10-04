@@ -1,34 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+
+/*
+====================
+    Global styles
+====================
+*/
+
 h1{
     color: #7F817E!important;
     font-size: 7em!important;
     font-family: 'Nunito', sans-serif;
-}
-
-#cta {
-    margin-top: 10%;
-}
-
-#cta p{
-    font-size: 4em;
-    color: #7F817E!important;
-    font-family: 'Open Sans', sans-serif;
+    color: #2FB4B4!important;
 }
 
 p{
     font-family: 'Open Sans', sans-serif;   
-}
-
-#learn-more {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 1.2em!important;
-    height: 100px;
-    width: 50%;
 
 }
-
 
 #custom-nav{
 
@@ -40,6 +30,22 @@ p{
     
 }
 
+.btn {
+
+    background-color: #2FB4B4!important;
+}
+
+.btn:hover {
+    background-color: #fafafa!important;
+    color: #7F817E!important;
+    border: 1px solid #7F817E!important;
+}
+
+#custom-nav img, #custom-nav #brand {
+
+    position: relative;
+    left: 10%;
+}
 
 #custom-nav ul a, 
 #custom-nav #brand {
@@ -57,10 +63,9 @@ p{
     font-size: 1.3em;
     position: relative;
     bottom: 20%;
-    font-weight: bold;
-   
-    
+    font-weight: bold;  
 }
+
 
 #toggler {
     position: absolute;
@@ -91,6 +96,46 @@ p{
     left: 45%;
     background-color: #7F817E;
 }
+
+#nav-mobile {
+
+    position: relative;
+    right: 16%;
+    font-weight: bold;
+}
+
+
+ /*
+========================
+  Landing page styles
+========================
+*/
+
+
+#cta {
+    margin-top: 10%;
+    padding-bottom: 10%;
+    background-image: url('../images/tt-landing-pg-animation.gif')!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cta p{
+    font-size: 4em;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+#learn-more {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2em!important;
+    height: 100px;
+    width: 50%;
+
+}
+
 
 #sub-section{
  border: 1px solid #2FB4B4;
@@ -143,6 +188,104 @@ p{
 }
 
 
+
+/*
+====================
+   About styles
+====================
+*/
+
+
+
+
+#about-content{
+
+    padding-bottom: 20%;
+}
+
+#about-content h1{
+    color: #7F817E!important;
+    font-size: 4em!important;
+    font-family: 'Nunito', sans-serif;
+    color: #2FB4B4!important;
+}
+
+
+#our-history{
+
+    margin-bottom: 5%;
+}
+
+
+/*
+ ========================
+   Team page styles
+ ========================
+*/
+      
+
+#the-team {
+
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+#the-team div:nth-of-type(1), #the-team div:nth-of-type(2), #the-team div:nth-of-type(3), #the-team div:nth-of-type(4) {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 5%;
+    cursor: pointer;
+    
+
+}
+ 
+#the-team img {
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+}
+
+#the-team div:hover{
+    transform: scale(1.5, 1.5);
+}
+
+#the-team img:nth-of-type(1):hover {
+display: block;
+
+}
+
+#the-team p {
+    text-align: center;
+    font-weight: bold;
+}
+
+#team-page {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/*
+====================
+   Footer styles
+====================
+*/
+                   
+
 #footer{
     background-color: #ffffff!important;
     color: #7F817E!important;
@@ -167,9 +310,67 @@ p{
     font-family: 'Open Sans', sans-serif;
 }
 
-/*
-Responsive code for mobile
 
+
+
+/*
+ ========================
+   Privacy page styles
+ ========================
+*/
+                   
+
+#privacy h1 {
+    color: #7F817E!important;
+    font-size: 5em!important;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#privacy h2 {
+
+    color: #7F817E!important;
+    font-size: 3em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy h3 {
+
+    color: #7F817E!important;
+    font-size: 2em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy h4 {
+
+    color: #7F817E!important;
+    font-size: 1.5em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy ul {
+
+    
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#privacy li {
+
+    margin-bottom: 10px;
+}
+
+#privacy a {
+
+    color: #7F817E!important;
+    font-weight: bold!important;
+    text-decoration: underline;
+}
+
+/*
+================================
+   Responsive code for mobile
+================================
 */ 
 
 @media(max-width: 703px){
@@ -182,4 +383,46 @@ Responsive code for mobile
         margin-bottom: 20%;
     
     }
+
+    #nav-mobile ul li{
+      display: inline-block!important;
+        }
+
+
+
+        
+#the-team {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+#the-team div:nth-of-type(1), #the-team div:nth-of-type(2), #the-team div:nth-of-type(3), #the-team div:nth-of-type(4) {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 5%;
+    cursor: pointer;
+
+}
+
+#team-page {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+#the-team div:hover {
+
+    z-index: 2;
+}
+
 }

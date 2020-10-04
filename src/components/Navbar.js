@@ -35,7 +35,7 @@ import 'aos/dist/aos.css';
         return (
            
                 <nav id="custom-nav">
-                    <div className="nav-wrapper container"><Link to="/"><img src={logo} data-aos="zoom-in-right"/></Link>
+                    <div className="nav-wrapper"><Link to="/"><img src={logo} data-aos="zoom-in-right"/></Link>
                        <Link to="/" id="brand" data-aos="zoom-in-right">The Talkertive</Link>
                    {showNavItems ? ( <ul id="nav-mobile" className="right" >
                        <li>
@@ -53,7 +53,7 @@ import 'aos/dist/aos.css';
                         <li>
                           <Link to="/contact" data-aos="zoom-in-left">Contact</Link>
                         </li>
-                    </ul>) : null}
+                       </ul>) : null}
                     </div>
                     <div className="right" id="toggler" onClick={this.toggleEvent}>
                       <div>

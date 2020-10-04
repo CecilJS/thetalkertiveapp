@@ -38,7 +38,7 @@ import 'aos/dist/aos.css';
                 <p data-aos="fade-right">Let us dive into your idea and build a concept</p>
                 <a className="waves-effect waves-light btn" data-aos="fade-right" onClick={this.showMore}><i className="material-icons right">fiber_manual_record</i>Learn more</a>
                 {moreInfo ? (<p id="learn-more" data-aos="zoom-in-right"> 
-                Our team of technical giants, from UX designers to software engineers, will make your dream come true. 
+                Our team of technical giants, from UX designers to software engineers, will bring your idea to reality. 
                 We strive to understand your needs and keep you involved each step of the way, right from conception through to deployment. We can help you.</p>): null}
               </div>
             </div>

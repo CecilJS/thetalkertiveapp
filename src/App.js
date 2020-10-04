@@ -9,6 +9,7 @@ import Client from './components/Client';
 import Contact from './components/Contact';
 import Team from './components/Team';
 import Footer from './components/Footer';
+import Privacy from './components/Privacy';
 
 
 
@@ -42,6 +43,9 @@ import Footer from './components/Footer';
         </Route>
         
         <Route exact path="/contact" component={Contact}>
+       
+        </Route>
+        <Route exact path="/privacy-policy" component={Privacy}>
        
         </Route>
 

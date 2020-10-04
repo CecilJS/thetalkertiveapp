@@ -7,11 +7,11 @@ class Footer extends Component {
             
                 <footer className=" row container" id="copyright-section">
                     <div className="container col l4 m12 s12">
-                      <p>The Talkertive © 2020 Copyright - All Right Reserved.</p> 
+                      <p>The Talkertive © Copyright 2020 - All Right Reserved.</p> 
                     </div>
                     <div className="container col l4 m12 s12" id="legal-notices">
                     <ul>
-                      <li><Link to="/">Privacy Policy</Link></li>
+                      <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                       <li><Link to="/">Terms and Conditions</Link></li>
                     </ul>
                   
