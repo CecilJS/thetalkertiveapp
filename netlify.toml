@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
-  publish="thetalkertiveapp/src/components/build"
-  base = "thetalkertiveapp/src/components/"
+  publish="/build"
+  base = "/"
 
   [[redirects]]
   from = "/*"
