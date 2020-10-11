@@ -48,37 +48,32 @@ import 'aos/dist/aos.css';
               <Link to="/team" className="waves-effect waves-light btn">Meet The Team</Link>
               </div>
             </div>
-            <div className="container row" id="project-request" data-aos="zoom-in-up">
-              <div className="col l12 m12 s12">
-                <p>Do you have a project?</p>
-                <p>Let's work together!</p>
+              <div className="container row" id="project-request" data-aos="zoom-in-up">
+                <div className="col l12 m12 s12">
+                  <p>Do you have a project?</p>
+                  <p>Let's work together!</p>
+                </div>
               </div>
-            </div>
-            <div className="container row" id="journey" data-aos="zoom-in-up">
-                <div className="col l6 m12 s12" id="dev-path">
-                    <p>
-                    Are you a developer that needs help to complete an existing project? We've got you covered. Use the button below.
-                    </p>
-                    <div>
-                      <Link to="/developer" className="waves-effect waves-light btn">Developer</Link>
-                    </div>
-                    <div>
-                      <Link to="/developer" className="waves-effect waves-light btn"><i className="material-icons right">fiber_manual_record</i>Learn more</Link>
-                    </div>
+              <div className="container row" id="journey" data-aos="zoom-in-up">
+                  <div className="col l6 m12 s12" id="dev-path">
+                      <p>
+                      Are you a developer that needs help to complete an existing project? We've got you covered. Use the button below.
+                      </p>
+                      <div>
+                        <Link to="/developer" className="waves-effect waves-light btn" id="path-one">Developer</Link>
+                      </div>
+                     
+                  </div>
+                  <div className="col l6 m12 s12" id="client-path">
+                      <p>
+                      Do you want to start a new project and don't know where to start? We've got you covered. Use the button below.
+                      </p>
+                      <div>
+                        <Link to="/client" className="waves-effect waves-light btn" id="path-two">Client</Link>
+                      </div>
+                    
+                  </div>
                 </div>
-                <div className="col l6 m12 s12" id="client-path">
-                    <p>
-                    Do you want to start a new project and don't know where to start? We've got you covered. Use the button below.
-                    </p>
-                    <div>
-                      <Link to="/client" className="waves-effect waves-light btn">Client</Link>
-                    </div>
-                    <div>
-                      <Link to="/client" className="waves-effect waves-light btn"><i className="material-icons right">fiber_manual_record</i>Learn more</Link>
-                    </div>
-                   
-                </div>
-            </div>
             </section>
         )
     }

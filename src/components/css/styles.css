@@ -9,7 +9,7 @@
 */
 
 h1{
-    color: #7F817E!important;
+  
     font-size: 7em!important;
     font-family: 'Nunito', sans-serif;
     color: #2FB4B4!important;
@@ -184,9 +184,13 @@ p{
 
 #client-path  p {
     margin-bottom: 23%;
-
 }
 
+#path-one, #path-two {
+    height:  50px!important;
+    width:   150px;
+    padding: 8px;
+}
 
 
 /*
@@ -251,7 +255,7 @@ p{
     border-radius: 50%;
 }
 
-#the-team div:hover{
+#the-team img:hover{
     transform: scale(1.5, 1.5);
 }
 
@@ -263,6 +267,7 @@ display: block;
 #the-team p {
     text-align: center;
     font-weight: bold;
+    color: #2FB4B4;
 }
 
 #team-page {
@@ -272,6 +277,60 @@ display: block;
     padding-bottom: 2%;
     align-items: center;
     justify-content: center;
+}
+
+
+/*
+========================
+  Contact styles styles
+========================
+*/
+
+#contact-page {
+    padding-bottom: 15%;
+}
+
+
+#contact-page h1{
+
+    font-size: 4em!important;
+    text-align: center;
+    
+}
+
+#contact-page p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#contact-page h2 {
+    
+    color: #2FB4B4!important;
+    font-size: 3em!important;
+    font-family: 'Nunito', sans-serif;
+    
+
+}
+
+#social-path {
+
+    padding-left: 10%;
+}
+
+#contact-path {
+    margin-top: 10%;
+ 
+}
+
+#contact-path p {
+
+    text-align: justify;
+}
+
+#direct-path{
+
+    border-right: 1px solid #7F817E!important;
+    
 }
 
 
@@ -424,5 +483,31 @@ display: block;
 
     z-index: 2;
 }
+
+
+
+
+#social-path {
+
+    padding-left: none;
+}
+
+#contact-path {
+    margin-top: 10%;
+ 
+}
+
+#contact-path p {
+
+    text-align: justify;
+}
+
+#direct-path{
+
+    border-right: none;
+    
+}
+
+
 
 }

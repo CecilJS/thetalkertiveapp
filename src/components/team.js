@@ -17,26 +17,7 @@ import 'aos/dist/aos.css';
     render() {
         return (
              <div>
-               <section id="the-team">
-                   <div data-aos="zoom-in-right">
-                     <img src={Cecil} alt="Software-engineer-profile"/>
-                     <p>Software Engineer</p>
-                   </div>
-                   <div data-aos="zoom-in-right">
-                     <img src={Evelyn} alt="UX-Designer-profile"/>
-                     <p>UX & UI Designer</p>
-                   </div>
-                   <div data-aos="zoom-in-right">
-                     <img src={Cecil} alt="Software-engineer-profile"/>
-                     <p>Graphics Designer</p>
-                   </div>
-                   <div data-aos="zoom-in-right">
-                    <img src={Evelyn} alt="UX-Designer-profile"/>
-                     <p>Front End Developer</p>
-                   </div>
-                  
-               </section>
-               <section id="team-page">
+             <section id="team-page">
                  <div>
                     <h1>Meet the Team</h1>
                 </div>
@@ -45,6 +26,30 @@ import 'aos/dist/aos.css';
                 </div>
                    
                </section>
+               <section id="the-team">
+                   <div data-aos="zoom-in-right">
+                     <img src={Cecil} data-aos="zoom-in-right" alt="Software-engineer-profile"/>
+                     <p>Software Engineer</p>
+                     <p>Bio</p>
+                   </div>
+                   <div data-aos="zoom-in-right">
+                     <img src={Evelyn} data-aos="zoom-in-right" alt="UX-Designer-profile"/>
+                     <p>UX & UI Designer</p>
+                     <p>Bio</p>
+                   </div>
+                   <div data-aos="zoom-in-right">
+                     <img src={Cecil} data-aos="zoom-in-right" alt="Software-engineer-profile"/>
+                     <p>Graphics Designer</p>
+                     <p>Bio</p>
+                   </div>
+                   <div data-aos="zoom-in-right">
+                    <img src={Evelyn} data-aos="zoom-in-right" alt="UX-Designer-profile"/>
+                     <p>Front End Developer</p>
+                     <p>Bio</p>
+                   </div>
+                  
+               </section>
+               
             
             </div>
         )
