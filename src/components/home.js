@@ -29,7 +29,9 @@ import 'aos/dist/aos.css';
 
     render() {
 
+      // Destructuring for use inside JSX
       const {moreInfo} = this.state
+      
         return (
             <section >
             <div className="container row" id="cta" >

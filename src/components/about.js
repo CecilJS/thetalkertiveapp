@@ -15,8 +15,10 @@ import { Link } from "react-router-dom";
     render() {
         return (
             <div className="container" id="about-content" data-aos="zoom-in-right">
+             <section className="row">
                 <h1>About Us</h1>
-              <section id="our-history">
+               <section className="col l12 m12 s12">
+                  <article id="our-history">
                     <p>
                         The Talkertive was established in 2017 as a platform where Software developers, UX designers and Graphic designers collaborate on projects.
                     </p>
@@ -31,6 +33,9 @@ import { Link } from "react-router-dom";
                         If you are looking for software developers and designers for your project, you are at the right place.
                         On the other hand, if you are a developer or UX designer and need someone to work with on your project, by all means, get in touch.
                     </p>
+                  </article>
+
+                 </section>   
                 </section>
                 <Link to="/team" className="waves-effect waves-light btn">Meet The Team</Link>
             </div>
