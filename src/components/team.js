@@ -23,34 +23,40 @@ import 'aos/dist/aos.css';
                 </div>
                 <div>
                   <Link to="/contact" className="waves-effect waves-light btn">Contact us</Link>
-                </div>
-                   
+                </div>     
                </section>
                <section id="the-team">
-                   <div data-aos="zoom-in-right">
+                   <div className="team-mates" data-aos="zoom-in-right">
                      <img src={Cecil} data-aos="zoom-in-right" alt="Software-engineer-profile"/>
-                     <p>Software Engineer</p>
-                     <p>Bio</p>
+                      <div className="team-mates-details">
+                        <p>Software Engineer</p>
+                        <p>Bio</p>
+                      </div>
+                     
                    </div>
-                   <div data-aos="zoom-in-right">
+                   <div className="team-mates"  data-aos="zoom-in-right">
                      <img src={Evelyn} data-aos="zoom-in-right" alt="UX-Designer-profile"/>
-                     <p>UX & UI Designer</p>
-                     <p>Bio</p>
+                     <div className="team-mates-details">
+                        <p>UX & UI Designer</p>
+                        <p>Bio</p>
+                      </div>
                    </div>
-                   <div data-aos="zoom-in-right">
+                   <div className="team-mates" data-aos="zoom-in-right">
                      <img src={Cecil} data-aos="zoom-in-right" alt="Software-engineer-profile"/>
-                     <p>Graphics Designer</p>
-                     <p>Bio</p>
+                     <div  className="team-mates-details">
+                        <p>Graphics Designer</p>
+                        <p>Bio</p>
+                      </div>
                    </div>
-                   <div data-aos="zoom-in-right">
+                   <div className="team-mates" data-aos="zoom-in-right">
                     <img src={Evelyn} data-aos="zoom-in-right" alt="UX-Designer-profile"/>
-                     <p>Front End Developer</p>
-                     <p>Bio</p>
+                     <div  className="team-mates-details">
+                        <p>Front End Developer</p>
+                        <p>Bio</p>
+                      </div>
                    </div>
                   
                </section>
-               
-            
             </div>
         )
     }

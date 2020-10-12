@@ -434,6 +434,578 @@ display: block;
     text-decoration: underline;
 }
 
+
+
+
+
+/*
+================================
+   Responsive code for mobile
+================================
+*/ 
+
+@media(max-width: 768px){
+
+
+
+    /*
+====================
+    Global styles
+====================
+*/
+
+h1{
+  
+    font-size: 4.5em!important;
+    font-family: 'Nunito', sans-serif;
+    color: #2FB4B4!important;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;   
+
+}
+
+#custom-nav{
+
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+    border-bottom: none!important;
+    box-shadow: none!important;
+    margin-top: 1.5%;
+    
+}
+
+.btn {
+
+    background-color: #2FB4B4!important;
+}
+
+.btn:hover {
+    background-color: #fafafa!important;
+    color: #7F817E!important;
+    border: 1px solid #7F817E!important;
+}
+
+#custom-nav img, #custom-nav #brand {
+
+    position: relative;
+    left: 5%;
+}
+
+#custom-nav ul a, 
+#custom-nav #brand {
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em!important;
+
+}
+
+#custom-nav img {
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+#custom-nav #brand{
+    font-size: 1.3em;
+    position: relative;
+    bottom: 20%;
+    font-weight: bold;  
+}
+
+
+#toggler {
+    position: absolute;
+    right: 25%;
+    bottom: 92%;
+    left: 80%;
+    cursor: pointer;
+    border: 2px solid #7F817E;
+    border-radius: 50%;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+} 
+
+#toggler div:nth-of-type(1){
+    height: 3px;
+    width: 25px;
+    background-color: #7F817E;
+    position: relative;
+    right: 25%;
+}
+
+#toggler div:nth-of-type(2){
+    height: 20px;
+    width: 3px;
+    margin-top: 5px;
+    position: relative;
+    left: 45%;
+    background-color: #7F817E;
+}
+
+#nav-mobile {
+
+    position: relative;
+    right: 16%;
+    font-weight: bold;
+}
+
+
+ /*
+========================
+  Landing page styles
+========================
+*/
+
+
+#cta {
+    margin-top: 10%;
+    padding-bottom: 10%;
+    background-image: url('../images/tt-landing-pg-animation.gif')!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cta p{
+    font-size: 2.5em;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+#learn-more {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2em!important;
+    height: 100px;
+    width: 50%;
+
+}
+
+
+#sub-section{
+ border: 1px solid #2FB4B4;
+ margin-top: 0;
+ padding: 20px;
+}
+
+#sub-section p, #project-request p {
+    font-size: 2em;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#project-request{
+
+    margin-top: 15%;
+}
+
+#project-request p:nth-of-type(2){
+    font-size: 2em!important;
+}
+
+#journey{
+    margin-top: 15%;
+    padding: 2%;
+    
+   
+}
+
+#dev-path {
+
+    background-color: #2FB4B4!important;
+    font-size: 2em;
+    padding: 5%;
+    color: #ffffff!important;
+}
+
+#client-path {
+    font-size: 2em;
+    padding: 5%;
+    color: #7F817E!important;
+    background-color: #ffffff!important;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+#client-path  p {
+    margin-bottom: 23%;
+}
+
+#path-one, #path-two {
+    height:  50px!important;
+    width:   150px;
+    padding: 8px;
+}
+
+
+/*
+====================
+   About styles
+====================
+*/
+
+
+
+
+#about-content{
+
+    padding-bottom: 20%;
+    margin-top: 10%!important;
+}
+
+#about-content h1{
+    color: #7F817E!important;
+    font-size: 3em!important;
+    font-family: 'Nunito', sans-serif;
+    color: #2FB4B4!important;
+}
+
+
+#our-history{
+
+    margin-bottom: 5%;
+}
+
+#history p{
+    font-size: 3em!important;
+
+}
+
+
+
+
+
+/*
+ ========================
+   Team page styles
+ ========================
+*/
+      
+
+#the-team {
+
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+#the-team .team-mates {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#the-team img {
+    height: 60%!important;
+    width: 60% !important;
+    border-radius: 50%;
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+#the-team img:hover{
+    transform: scale(1.5, 1.5);
+}
+
+#the-team img:nth-of-type(1):hover {
+display: block;
+
+}
+
+#the-team p {
+    text-align: center;
+    font-weight: bold;
+    color: #2FB4B4;
+    
+}
+
+#the-team .team-mates-details {
+
+   cursor: pointer;
+}
+
+
+#team-page {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+========================
+  Contact styles styles
+========================
+*/
+
+#contact-page {
+    padding-bottom: 15%;
+}
+
+
+#contact-page h1{
+
+    font-size: 3em!important;
+    text-align: center;
+    
+}
+
+#contact-page p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#contact-page h2 {
+    
+    color: #2FB4B4!important;
+    font-size: 2em!important;
+    font-family: 'Nunito', sans-serif;
+    
+
+}
+
+#social-path {
+
+    padding-left: 0;
+}
+
+#contact-path {
+    margin-top: 10%;
+ 
+}
+
+#contact-path h2, #social-path h2 {
+    margin-bottom: 10%;
+ 
+}
+
+#contact-path p {
+
+    text-align: justify;
+}
+
+#direct-path{
+
+    border-bottom: 1px solid #7F817E!important;
+    border-right: none!important;
+    margin-bottom: 5%;
+    
+}
+
+#direct-path p {
+    padding-bottom: 10%;
+}
+
+
+
+
+
+
+/*
+====================
+   Footer styles
+====================
+*/
+                   
+
+#footer{
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+    text-align: justify!important;
+    
+}
+
+#copyright-section{
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+    border-top: 1px solid #7F817E;
+}
+
+#copyright-section i {
+    color: #7F817E!important;
+    margin-top: 3.5%;
+}
+
+#legal-notices li, #legal-notices a {
+    display: inline;
+    margin: 10px;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify!important;
+}
+
+
+
+
+/*
+ ========================
+   Privacy page styles
+ ========================
+*/
+                   
+
+#privacy h1 {
+    color: #7F817E!important;
+    font-size: 5em!important;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#privacy h2 {
+
+    color: #7F817E!important;
+    font-size: 3em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy h3 {
+
+    color: #7F817E!important;
+    font-size: 2em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy h4 {
+
+    color: #7F817E!important;
+    font-size: 1.5em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy ul {
+
+    
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#privacy li {
+
+    margin-bottom: 10px;
+}
+
+#privacy a {
+
+    color: #7F817E!important;
+    font-weight: bold!important;
+    text-decoration: underline;
+}
+
+
+    #learn-more {
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 1.2em!important;
+        height: 100px;
+        width: 70%;
+        margin-bottom: 20%;
+    
+    }
+
+    #nav-mobile ul li{
+      display: inline-block!important;
+        }
+
+
+
+        
+#the-team {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+#the-team div:nth-of-type(1), #the-team div:nth-of-type(2), #the-team div:nth-of-type(3), #the-team div:nth-of-type(4) {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 5%;
+    cursor: pointer;
+
+}
+
+#team-page {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+#the-team div:hover {
+
+    z-index: 2;
+}
+
+
+
+
+#social-path {
+
+    padding-left: none;
+}
+
+#contact-path {
+    margin-top: 10%;
+ 
+}
+
+#contact-path p {
+
+    text-align: justify;
+}
+
+#direct-path{
+
+    border-right: none;
+    
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 ================================
    Responsive code for mobile
@@ -582,12 +1154,12 @@ p{
 
 #sub-section{
  border: 1px solid #2FB4B4;
- margin-top: 10%;
+ margin-top: 18%;
  padding: 20px;
 }
 
 #sub-section p, #project-request p {
-    font-size: 3em;
+    font-size: 2em;
     color: #7F817E!important;
     font-family: 'Open Sans', sans-serif;
 }
@@ -611,13 +1183,13 @@ p{
 #dev-path {
 
     background-color: #2FB4B4!important;
-    font-size: 3em;
+    font-size: 2em;
     padding: 5%;
     color: #ffffff!important;
 }
 
 #client-path {
-    font-size: 3em;
+    font-size: 2em;
     padding: 5%;
     color: #7F817E!important;
     background-color: #ffffff!important;
@@ -665,7 +1237,7 @@ p{
 }
 
 #history p{
-    font-size: 1em!important;
+    font-size: 2em!important;
 
 }
 
@@ -685,26 +1257,25 @@ p{
     display: flex;
     flex-direction: row;
     padding-bottom: 5%;
-    padding-top: 2%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+#the-team .team-mates {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
     align-items: center;
     justify-content: center;
 }
-
-#the-team div:nth-of-type(1), #the-team div:nth-of-type(2), #the-team div:nth-of-type(3), #the-team div:nth-of-type(4) {
-
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 5%;
-    cursor: pointer;
-    
-
-}
  
 #the-team img {
-    width: 188px;
-    height: 188px;
+    height: 60%!important;
+    width: 60% !important;
     border-radius: 50%;
+    margin-bottom: 0;
+    max-width: 100%;
 }
 
 #the-team img:hover{
@@ -720,7 +1291,14 @@ display: block;
     text-align: center;
     font-weight: bold;
     color: #2FB4B4;
+    
 }
+
+#the-team .team-mates-details {
+
+   cursor: pointer;
+}
+
 
 #team-page {
 
@@ -745,7 +1323,7 @@ display: block;
 
 #contact-page h1{
 
-    font-size: 4em!important;
+    font-size: 3em!important;
     text-align: center;
     
 }
@@ -758,7 +1336,7 @@ display: block;
 #contact-page h2 {
     
     color: #2FB4B4!important;
-    font-size: 3em!important;
+    font-size: 2em!important;
     font-family: 'Nunito', sans-serif;
     
 
@@ -766,11 +1344,16 @@ display: block;
 
 #social-path {
 
-    padding-left: 10%;
+    padding-left: 0;
 }
 
 #contact-path {
     margin-top: 10%;
+ 
+}
+
+#contact-path h2, #social-path h2 {
+    margin-bottom: 10%;
  
 }
 
@@ -781,8 +1364,14 @@ display: block;
 
 #direct-path{
 
-    border-right: 1px solid #7F817E!important;
+    border-bottom: 1px solid #7F817E!important;
+    border-right: none!important;
+    margin-bottom: 5%;
     
+}
+
+#direct-path p {
+    padding-bottom: 10%;
 }
 
 
