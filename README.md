@@ -1,8 +1,7 @@
 # Welcome to the World of Software Designers.
 
-## The Talkertive
 
-Here at the talkertive:
+Here at *The Talkertive*:
 
 - We design
 - We iterate
