@@ -987,7 +987,7 @@ p{
     left: 5%;
 }
 
-#custom-nav ul a, 
+
 #custom-nav #brand {
     color: #7F817E!important;
     font-family: 'Open Sans', sans-serif;
@@ -1019,6 +1019,7 @@ p{
     padding: 15px;
     height: 50px;
     width: 50px;
+    z-index: 2;
 } 
 
 #toggler div:nth-of-type(1){
@@ -1040,10 +1041,26 @@ p{
 
 #nav-mobile {
 
-    position: relative;
-    right: 16%;
+    position: fixed;
+    top:0;
+    right: 0;
     font-weight: bold;
+    background-color: #2FB4B4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50vw;
+    z-index: 2;
 }
+
+#custom-nav ul a {
+
+    color: #ffffff!important;
+    text-align: end;
+    position: relative;
+    top: 150%;
+}
+
 
 
  /*
@@ -1059,6 +1076,7 @@ p{
     background-image: url('../images/tt-landing-pg-animation.gif')!important;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
 }
 
 #cta p{
@@ -1177,12 +1195,19 @@ p{
    Team page styles
  ========================
 */
-      
+#team-page {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+}    
 
 #the-team {
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom: 5%;
     align-items: center;
     justify-content: center;
@@ -1227,14 +1252,7 @@ display: block;
 }
 
 
-#team-page {
 
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2%;
-    align-items: center;
-    justify-content: center;
-}
 
 
 /*
