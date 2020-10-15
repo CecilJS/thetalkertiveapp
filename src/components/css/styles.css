@@ -84,6 +84,7 @@ p{
     height: 3px;
     width: 25px;
     background-color: #7F817E;
+    transition: all 0.5s ease;
     position: relative;
     right: 25%;
 }
@@ -92,10 +93,56 @@ p{
     height: 20px;
     width: 3px;
     margin-top: 5px;
+    transition: all 0.5s ease;
     position: relative;
     left: 45%;
     background-color: #7F817E;
 }
+
+/* Change of Toggle icon*/
+
+#transformed-toggler {
+    position: absolute;
+    right: 20%;
+    bottom: 91%;
+    left: 85%;
+    cursor: pointer;
+    border: 2px solid #7F817E;
+    border-radius: 50%;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    background-color: #fafafa!important;
+    
+} 
+
+#transformed-toggler div:nth-of-type(1){
+    height: 3px;
+    width: 25px;
+    background-color: #7F817E;
+    position: relative;
+    right: 50%;
+    top: 30%;
+    transition: all 0.5s ease;
+    transform: rotate(90deg);
+}
+
+#transformed-toggler div:nth-of-type(2){
+    height: 20px;
+    width: 3px;
+    margin-top: 5px;
+    position: relative;
+    right: 40%;
+    left: 90%;
+    bottom: 70%;
+    transition: all 0.5s ease;
+    background-color: #7F817E;
+      
+    
+}
+
+/* Change of Toggle icon --End*/
 
 #nav-mobile {
 
@@ -436,6 +483,1089 @@ display: block;
 
 
 
+/*
+=========================================================
+      Responsive code for larger devices
+==========================================================
+*/ 
+
+@media(max-width: 1200px){
+
+
+
+    /*
+====================
+    Global styles
+====================
+*/
+
+h1{
+  
+    font-size: 4.5em!important;
+    font-family: 'Nunito', sans-serif;
+    color: #2FB4B4!important;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;   
+
+}
+
+#custom-nav{
+
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+    border-bottom: none!important;
+    box-shadow: none!important;
+    margin-top: 1.5%;
+    
+}
+
+.btn {
+
+    background-color: #2FB4B4!important;
+}
+
+.btn:hover {
+    background-color: #fafafa!important;
+    color: #7F817E!important;
+    border: 1px solid #7F817E!important;
+}
+
+#custom-nav img, #custom-nav #brand {
+
+    position: relative;
+    left: 5%;
+}
+
+ 
+#custom-nav #brand {
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em!important;
+
+}
+
+#custom-nav img {
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+#custom-nav #brand{
+    font-size: 1.3em;
+    position: relative;
+    bottom: 20%;
+    font-weight: bold;  
+}
+
+
+#toggler {
+    position: absolute;
+    right: 15%;
+    bottom: 94%;
+    left: 90%;
+    cursor: pointer;
+    border: 2px solid #7F817E;
+    border-radius: 50%;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    background-color: #fafafa!important;
+} 
+
+#toggler div:nth-of-type(1){
+    height: 3px;
+    width: 25px;
+    background-color: #7F817E;
+    transition: all 0.5s ease;
+    position: relative;
+    right: 25%;
+}
+
+#toggler div:nth-of-type(2){
+    height: 20px;
+    width: 3px;
+    margin-top: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+    left: 45%;
+    background-color: #7F817E;
+}
+
+/* Change of Toggle icon*/
+
+#transformed-toggler {
+    position: absolute;
+    right: 15%;
+    bottom: 94%;
+    left: 90%;
+    cursor: pointer;
+    border: 2px solid #7F817E;
+    border-radius: 50%;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    background-color: #fafafa!important;
+    
+} 
+
+#transformed-toggler div:nth-of-type(1){
+    height: 3px;
+    width: 25px;
+    background-color: #7F817E;
+    position: relative;
+    right: 50%;
+    top: 30%;
+    transition: all 0.5s ease;
+    transform: rotate(90deg);
+}
+
+#transformed-toggler div:nth-of-type(2){
+    height: 20px;
+    width: 3px;
+    margin-top: 5px;
+    position: relative;
+    right: 40%;
+    left: 90%;
+    bottom: 70%;
+    transition: all 0.5s ease;
+    background-color: #7F817E;
+      
+    
+}
+
+/* Change of Toggle icon --End*/
+
+#nav-mobile {
+
+    position: fixed;
+    top:0;
+    right: 0;
+    font-weight: bold;
+    background-color: #2FB4B4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50vw;
+    z-index: 2;
+    
+}
+
+#custom-nav ul a {
+
+    color: #ffffff!important;
+    text-align: end;
+    position: relative;
+    top: 150%;
+    right: 0;
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+
+ /*
+========================
+  Landing page styles
+========================
+*/
+
+
+#cta {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding-bottom: 0;
+    background-image: url('../images/tt-landing-pg-animation.gif')!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cta p{
+    font-size: 3em;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+#learn-more {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2em!important;
+    height: 100px;
+    width: 50%;
+
+}
+
+
+#sub-section{
+ border: 1px solid #2FB4B4;
+ margin-top: 0;
+ padding: 20px;
+}
+
+#sub-section p, #project-request p {
+    font-size: 2.5em;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#project-request{
+
+    margin-top: 15%;
+}
+
+#project-request p:nth-of-type(2){
+    font-size: 2em!important;
+}
+
+#journey{
+    margin-top: 15%;
+    padding: 2%;
+    
+   
+}
+
+#dev-path {
+
+    background-color: #2FB4B4!important;
+    font-size: 2em;
+    padding: 5%;
+    color: #ffffff!important;
+}
+
+#client-path {
+    font-size: 2em;
+    padding: 5%;
+    color: #7F817E!important;
+    background-color: #ffffff!important;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+#client-path  p {
+    margin-bottom: 23%;
+}
+
+#path-one, #path-two {
+    height:  50px!important;
+    width:   150px;
+    padding: 8px;
+}
+
+
+/*
+====================
+   About styles
+====================
+*/
+
+
+
+
+#about-content{
+
+    padding-bottom: 20%;
+    margin-top: 10%!important;
+   
+}
+
+#about-content h1{
+    color: #7F817E!important;
+    font-size: 3em!important;
+    font-family: 'Nunito', sans-serif;
+    color: #2FB4B4!important;
+}
+
+
+#our-history{
+
+    margin-bottom: 5%;
+}
+
+#our-history p{
+    font-size: 2.5em!important;
+
+}
+
+
+
+
+
+/*
+ ========================
+   Team page styles
+ ========================
+*/
+
+#team-page {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+}    
+
+#the-team {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+#the-team .team-mates {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#the-team img {
+    height: 90%!important;
+    width: 90% !important;
+    border-radius: 50%;
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+#the-team img:hover{
+    transform: scale(1.5, 1.5);
+}
+
+#the-team img:nth-of-type(1):hover {
+display: block;
+
+}
+
+#the-team p {
+    text-align: center;
+    font-weight: bold;
+    color: #2FB4B4;
+    font-size: 1.5em;
+    
+}
+
+#the-team .team-mates-details {
+
+   cursor: pointer;
+}
+
+/*
+========================
+  Contact styles styles
+========================
+*/
+
+#contact-page {
+    padding-bottom: 15%;
+}
+
+
+#contact-page h1{
+
+    font-size: 3em!important;
+    text-align: center;
+    
+}
+
+#contact-page p {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#contact-page h2 {
+    
+    color: #2FB4B4!important;
+    font-size: 2em!important;
+    font-family: 'Nunito', sans-serif;
+    
+
+}
+
+#social-path {
+
+    padding-left: 0;
+}
+
+#contact-path {
+    margin-top: 10%;
+    display: flex!important;
+    flex-direction: column!important;
+ 
+}
+
+#contact-path h2, #social-path h2 {
+    margin-bottom: 10%;
+ 
+}
+
+#contact-path p {
+
+    text-align: justify;
+}
+
+#direct-path{
+
+    border-bottom: 1px solid #7F817E!important;
+    border-right: none!important;
+    margin-bottom: 5%;
+    
+}
+
+#direct-path p {
+    padding-bottom: 10%;
+}
+
+
+
+
+
+
+/*
+====================
+   Footer styles
+====================
+*/
+                   
+
+#footer{
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+    text-align: justify!important;
+    
+}
+
+#copyright-section{
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+    border-top: 1px solid #7F817E;
+}
+
+#copyright-section i {
+    color: #7F817E!important;
+    margin-top: 3.5%;
+}
+
+#legal-notices li, #legal-notices a {
+    display: inline;
+    margin: 10px;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify!important;
+}
+
+
+
+
+/*
+ ========================
+   Privacy page styles
+ ========================
+*/
+                   
+
+#privacy h1 {
+    color: #7F817E!important;
+    font-size: 5em!important;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#privacy h2 {
+
+    color: #7F817E!important;
+    font-size: 3em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy h3 {
+
+    color: #7F817E!important;
+    font-size: 2em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy h4 {
+
+    color: #7F817E!important;
+    font-size: 1.5em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy ul {
+
+    
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#privacy li {
+
+    margin-bottom: 10px;
+}
+
+#privacy a {
+
+    color: #7F817E!important;
+    font-weight: bold!important;
+    text-decoration: underline;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*
+=========================================================
+      Responsive code for larger mobile devices
+==========================================================
+*/ 
+
+@media(max-width: 992px){
+
+
+
+    /*
+====================
+    Global styles
+====================
+*/
+
+h1{
+  
+    font-size: 4.5em!important;
+    font-family: 'Nunito', sans-serif;
+    color: #2FB4B4!important;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;   
+
+}
+
+#custom-nav{
+
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+    border-bottom: none!important;
+    box-shadow: none!important;
+    margin-top: 1.5%;
+    
+}
+
+.btn {
+
+    background-color: #2FB4B4!important;
+}
+
+.btn:hover {
+    background-color: #fafafa!important;
+    color: #7F817E!important;
+    border: 1px solid #7F817E!important;
+}
+
+#custom-nav img, #custom-nav #brand {
+
+    position: relative;
+    left: 5%;
+}
+
+ 
+#custom-nav #brand {
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em!important;
+
+}
+
+#custom-nav img {
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+#custom-nav #brand{
+    font-size: 1.3em;
+    position: relative;
+    bottom: 20%;
+    font-weight: bold;  
+}
+
+
+#toggler {
+    position: absolute;
+    right: 15%;
+    bottom: 94%;
+    left: 90%;
+    cursor: pointer;
+    border: 2px solid #7F817E;
+    border-radius: 50%;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    background-color: #fafafa!important;
+} 
+
+#toggler div:nth-of-type(1){
+    height: 3px;
+    width: 25px;
+    background-color: #7F817E;
+    transition: all 0.5s ease;
+    position: relative;
+    right: 25%;
+}
+
+#toggler div:nth-of-type(2){
+    height: 20px;
+    width: 3px;
+    margin-top: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+    left: 45%;
+    background-color: #7F817E;
+}
+
+
+/* Change of Toggle icon*/
+
+#transformed-toggler {
+    position: absolute;
+    right: 15%;
+    bottom: 94%;
+    left: 90%;
+    cursor: pointer;
+    border: 2px solid #7F817E;
+    border-radius: 50%;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    background-color: #fafafa!important;
+    
+} 
+
+#transformed-toggler div:nth-of-type(1){
+    height: 3px;
+    width: 25px;
+    background-color: #7F817E;
+    position: relative;
+    right: 50%;
+    top: 30%;
+    transition: all 0.5s ease;
+    transform: rotate(90deg);
+}
+
+#transformed-toggler div:nth-of-type(2){
+    height: 20px;
+    width: 3px;
+    margin-top: 5px;
+    position: relative;
+    right: 40%;
+    left: 90%;
+    bottom: 70%;
+    transition: all 0.5s ease;
+    background-color: #7F817E;
+      
+    
+}
+
+/* Change of Toggle icon --End*/
+
+
+#nav-mobile {
+
+    position: fixed;
+    top:0;
+    right: 0;
+    font-weight: bold;
+    background-color: #2FB4B4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50vw;
+    z-index: 2;
+    
+}
+
+#custom-nav ul a {
+
+    color: #ffffff!important;
+    text-align: end;
+    position: relative;
+    top: 150%;
+    right: 0;
+    font-size: 1.5em;
+}
+
+
+ /*
+========================
+  Landing page styles
+========================
+*/
+
+
+#cta {
+    margin-top: 10%;
+    padding-bottom: 1%;
+    background-image: url('../images/tt-landing-pg-animation.gif')!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cta p{
+    font-size: 2.5em;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+#learn-more {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2em!important;
+    height: 100px;
+    width: 50%;
+
+}
+
+
+#sub-section{
+ border: 1px solid #2FB4B4;
+ margin-top: 0;
+ padding: 20px;
+}
+
+#sub-section p, #project-request p {
+    font-size: 2em;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#project-request{
+
+    margin-top: 15%;
+}
+
+#project-request p:nth-of-type(2){
+    font-size: 2em!important;
+}
+
+#journey{
+    margin-top: 15%;
+    padding: 2%;
+    
+   
+}
+
+#dev-path {
+
+    background-color: #2FB4B4!important;
+    font-size: 2em;
+    padding: 5%;
+    color: #ffffff!important;
+}
+
+#client-path {
+    font-size: 2em;
+    padding: 5%;
+    color: #7F817E!important;
+    background-color: #ffffff!important;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+#client-path  p {
+    margin-bottom: 23%;
+}
+
+#path-one, #path-two {
+    height:  50px!important;
+    width:   150px;
+    padding: 8px;
+}
+
+
+/*
+====================
+   About styles
+====================
+*/
+
+
+
+
+#about-content{
+
+    padding-bottom: 20%;
+    margin-top: 10%!important;
+   
+}
+
+#about-content h1{
+    color: #7F817E!important;
+    font-size: 3em!important;
+    font-family: 'Nunito', sans-serif;
+    color: #2FB4B4!important;
+}
+
+
+#our-history{
+
+    margin-bottom: 5%;
+}
+
+#our-history p{
+    font-size: 1.5em!important;
+
+}
+
+
+
+
+
+/*
+ ========================
+   Team page styles
+ ========================
+*/
+
+#team-page {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+}    
+
+#the-team {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+#the-team .team-mates {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#the-team img {
+    height: 70%!important;
+    width: 70% !important;
+    border-radius: 50%;
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+#the-team img:hover{
+    transform: scale(1.5, 1.5);
+}
+
+#the-team img:nth-of-type(1):hover {
+display: block;
+
+}
+
+#the-team p {
+    text-align: center;
+    font-weight: bold;
+    color: #2FB4B4;
+    font-size: 1.5em;
+    
+}
+
+#the-team .team-mates-details {
+
+   cursor: pointer;
+}
+
+/*
+========================
+  Contact styles styles
+========================
+*/
+
+#contact-page {
+    padding-bottom: 15%;
+}
+
+
+#contact-page h1{
+
+    font-size: 3em!important;
+    text-align: center;
+    
+}
+
+#contact-page p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#contact-page h2 {
+    
+    color: #2FB4B4!important;
+    font-size: 2em!important;
+    font-family: 'Nunito', sans-serif;
+    
+
+}
+
+#social-path {
+
+    padding-left: 0;
+}
+
+#contact-path {
+    margin-top: 10%;
+ 
+}
+
+#contact-path h2, #social-path h2 {
+    margin-bottom: 10%;
+ 
+}
+
+#contact-path p {
+
+    text-align: justify;
+}
+
+#direct-path{
+
+    border-bottom: 1px solid #7F817E!important;
+    border-right: none!important;
+    margin-bottom: 5%;
+    
+}
+
+#direct-path p {
+    padding-bottom: 10%;
+}
+
+
+
+
+
+
+/*
+====================
+   Footer styles
+====================
+*/
+                   
+
+#footer{
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+    text-align: justify!important;
+    
+}
+
+#copyright-section{
+    background-color: #ffffff!important;
+    color: #7F817E!important;
+    border-top: 1px solid #7F817E;
+}
+
+#copyright-section i {
+    color: #7F817E!important;
+    margin-top: 3.5%;
+}
+
+#legal-notices li, #legal-notices a {
+    display: inline;
+    margin: 10px;
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify!important;
+}
+
+
+
+
+/*
+ ========================
+   Privacy page styles
+ ========================
+*/
+                   
+
+#privacy h1 {
+    color: #7F817E!important;
+    font-size: 5em!important;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#privacy h2 {
+
+    color: #7F817E!important;
+    font-size: 3em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy h3 {
+
+    color: #7F817E!important;
+    font-size: 2em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy h4 {
+
+    color: #7F817E!important;
+    font-size: 1.5em!important;
+    font-family: 'Nunito', sans-serif;
+}
+
+#privacy ul {
+
+    
+    color: #7F817E!important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#privacy li {
+
+    margin-bottom: 10px;
+}
+
+#privacy a {
+
+    color: #7F817E!important;
+    font-weight: bold!important;
+    text-decoration: underline;
+}
+
+
+
+
+}
+
+
 
 
 /*
@@ -493,7 +1623,7 @@ p{
     left: 5%;
 }
 
-#custom-nav ul a, 
+ 
 #custom-nav #brand {
     color: #7F817E!important;
     font-family: 'Open Sans', sans-serif;
@@ -516,39 +1646,108 @@ p{
 
 #toggler {
     position: absolute;
-    right: 25%;
-    bottom: 92%;
-    left: 80%;
+    right: 15%;
+    bottom: 94%;
+    left: 90%;
     cursor: pointer;
     border: 2px solid #7F817E;
     border-radius: 50%;
     padding: 15px;
     height: 50px;
     width: 50px;
+    z-index: 2;
+    background-color: #fafafa!important;
 } 
 
 #toggler div:nth-of-type(1){
     height: 3px;
     width: 25px;
     background-color: #7F817E;
+    transition: all 0.5s ease;
     position: relative;
     right: 25%;
+    
 }
 
 #toggler div:nth-of-type(2){
     height: 20px;
     width: 3px;
     margin-top: 5px;
+    transition: all 0.5s ease;
     position: relative;
     left: 45%;
     background-color: #7F817E;
 }
 
+/* Change of Toggle icon*/
+
+#transformed-toggler {
+    position: absolute;
+    right: 15%;
+    bottom: 94%;
+    left: 90%;
+    cursor: pointer;
+    border: 2px solid #7F817E;
+    border-radius: 50%;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    background-color: #fafafa!important;
+    
+} 
+
+#transformed-toggler div:nth-of-type(1){
+    height: 3px;
+    width: 25px;
+    background-color: #7F817E;
+    position: relative;
+    right: 50%;
+    top: 30%;
+    transition: all 0.5s ease;
+    transform: rotate(90deg);
+}
+
+#transformed-toggler div:nth-of-type(2){
+    height: 20px;
+    width: 3px;
+    margin-top: 5px;
+    position: relative;
+    right: 40%;
+    left: 90%;
+    bottom: 70%;
+    transition: all 0.5s ease;
+    background-color: #7F817E;
+      
+    
+}
+
+/* Change of Toggle icon --End*/
+
 #nav-mobile {
 
-    position: relative;
-    right: 16%;
+    position: fixed;
+    top:0;
+    right: 0;
     font-weight: bold;
+    background-color: #2FB4B4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50vw;
+    z-index: 2;
+    
+}
+
+#custom-nav ul a {
+
+    color: #ffffff!important;
+    text-align: end;
+    position: relative;
+    top: 150%;
+    right: 0;
+    font-size: 1.5em;
+    padding: 10px;
 }
 
 
@@ -653,6 +1852,7 @@ p{
 
     padding-bottom: 20%;
     margin-top: 10%!important;
+   
 }
 
 #about-content h1{
@@ -669,7 +1869,7 @@ p{
 }
 
 #history p{
-    font-size: 3em!important;
+    font-size: 3.5em!important;
 
 }
 
@@ -682,12 +1882,20 @@ p{
    Team page styles
  ========================
 */
-      
+
+#team-page {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+}    
 
 #the-team {
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom: 5%;
     align-items: center;
     justify-content: center;
@@ -703,8 +1911,8 @@ p{
 }
  
 #the-team img {
-    height: 60%!important;
-    width: 60% !important;
+    height: 70%!important;
+    width: 70% !important;
     border-radius: 50%;
     margin-bottom: 0;
     max-width: 100%;
@@ -723,6 +1931,7 @@ display: block;
     text-align: center;
     font-weight: bold;
     color: #2FB4B4;
+    font-size: 1.5em;
     
 }
 
@@ -730,17 +1939,6 @@ display: block;
 
    cursor: pointer;
 }
-
-
-#team-page {
-
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2%;
-    align-items: center;
-    justify-content: center;
-}
-
 
 /*
 ========================
@@ -911,27 +2109,6 @@ display: block;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 ================================
    Responsive code for mobile
@@ -1020,24 +2197,76 @@ p{
     height: 50px;
     width: 50px;
     z-index: 2;
+    background-color: #fafafa!important;
+    
 } 
 
 #toggler div:nth-of-type(1){
     height: 3px;
     width: 25px;
     background-color: #7F817E;
+    transition: all 0.5s ease;
     position: relative;
     right: 25%;
+    
 }
 
 #toggler div:nth-of-type(2){
     height: 20px;
     width: 3px;
     margin-top: 5px;
+    transition: all 0.5s ease;
     position: relative;
     left: 45%;
     background-color: #7F817E;
 }
+
+
+
+/* Change of Toggle icon*/
+
+#transformed-toggler {
+    position: absolute;
+    right: 25%;
+    bottom: 90%;
+    left: 80%;
+    cursor: pointer;
+    border: 2px solid #7F817E;
+    border-radius: 50%;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    background-color: #fafafa!important;
+    
+} 
+
+#transformed-toggler div:nth-of-type(1){
+    height: 3px;
+    width: 25px;
+    background-color: #7F817E;
+    position: relative;
+    right: 50%;
+    top: 30%;
+    transition: all 0.5s ease;
+    transform: rotate(90deg);
+}
+
+#transformed-toggler div:nth-of-type(2){
+    height: 20px;
+    width: 3px;
+    margin-top: 5px;
+    position: relative;
+    right: 40%;
+    left: 90%;
+    bottom: 70%;
+    transition: all 0.5s ease;
+    background-color: #7F817E;
+      
+    
+}
+
+/* Change of Toggle icon --End*/
 
 #nav-mobile {
 
@@ -1051,6 +2280,7 @@ p{
     height: 100vh;
     width: 50vw;
     z-index: 2;
+    
 }
 
 #custom-nav ul a {
@@ -1059,6 +2289,9 @@ p{
     text-align: end;
     position: relative;
     top: 150%;
+    right: 0;
+    font-size: 1em;
+    padding: 5px;
 }
 
 
@@ -1243,7 +2476,7 @@ display: block;
     text-align: center;
     font-weight: bold;
     color: #2FB4B4;
-    
+    font-size: 1em;
 }
 
 #the-team .team-mates-details {
@@ -1274,7 +2507,7 @@ display: block;
 }
 
 #contact-page p {
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
 }
 

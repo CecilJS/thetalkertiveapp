@@ -7,7 +7,8 @@ import 'aos/dist/aos.css';
 
  class Navbar extends Component {
     state = {
-      showNavItems: false
+      showNavItems: false,
+      changeToggler: false
 
     }
 
@@ -15,7 +16,8 @@ import 'aos/dist/aos.css';
       toggleEvent =()=>{
 
         this.setState({
-          showNavItems: !this.state.showNavItems
+          showNavItems: !this.state.showNavItems,
+          changeToggler: !this.state.changeToggler
         });
       }
    
@@ -27,11 +29,17 @@ import 'aos/dist/aos.css';
         })
       }
 
+      /**
+       * If showNavItems !== null, change toggler state (setting it to a different style) ---achieved: 16.10.2020
+       * forEach navItem that is clicked, set showNavItems to false
+       * When showNavItems !== null, if any other part of the page is clicked, set showNavItems to null
+       * 
+       */
 
 
     render() {
 
-      const {showNavItems} = this.state;
+      const {showNavItems, changeToggler} = this.state;
         return (
            
                 <nav id="custom-nav">
@@ -55,7 +63,7 @@ import 'aos/dist/aos.css';
                         </li>
                        </ul>) : null}
                     </div>
-                    <div className="right" id="toggler" onClick={this.toggleEvent}>
+                    <div className="right"  id={changeToggler ? "transformed-toggler" : "toggler"} onClick={this.toggleEvent}>
                       <div>
                       </div>
                       <div>  

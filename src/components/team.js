@@ -18,41 +18,45 @@ import 'aos/dist/aos.css';
         return (
              <div>
              <section id="team-page">
-                 <div>
+                 <div data-aos="fade-right">
                     <h1>Meet the Team</h1>
                 </div>
                 <div>
-                  <Link to="/contact" className="waves-effect waves-light btn">Contact us</Link>
+                  <Link to="/contact" className="waves-effect waves-light btn" data-aos="fade-right">Contact us</Link>
                 </div>     
                </section>
                <section id="the-team">
                    <div className="team-mates" data-aos="zoom-in-right">
                      <img src={Cecil} data-aos="zoom-in-right" alt="Software-engineer-profile"/>
                       <div className="team-mates-details">
+                        <p>Cecil</p>
                         <p>Software Engineer</p>
-                        <p>Bio</p>
+                        
                       </div>
                      
                    </div>
                    <div className="team-mates"  data-aos="zoom-in-right">
                      <img src={Evelyn} data-aos="zoom-in-right" alt="UX-Designer-profile"/>
                      <div className="team-mates-details">
+                        <p>Evelyn</p>
                         <p>UX & UI Designer</p>
-                        <p>Bio</p>
+                      
                       </div>
                    </div>
                    <div className="team-mates" data-aos="zoom-in-right">
                      <img src={Cecil} data-aos="zoom-in-right" alt="Software-engineer-profile"/>
                      <div  className="team-mates-details">
+                        <p>Somi</p>
                         <p>Graphics Designer</p>
-                        <p>Bio</p>
+                       
                       </div>
                    </div>
                    <div className="team-mates" data-aos="zoom-in-right">
                     <img src={Evelyn} data-aos="zoom-in-right" alt="UX-Designer-profile"/>
                      <div  className="team-mates-details">
+                        <p>Hayley</p>
                         <p>Front End Developer</p>
-                        <p>Bio</p>
+                       
                       </div>
                    </div>
                   
