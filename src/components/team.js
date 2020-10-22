@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import Cecil from './images/Cecil.jpg';
-import Evelyn from './images/Evelyn.jpg';
+import Cecil from './images/Cecil-profile-icon.png';
+import Evelyn from './images/Evelyn-profile-icon.png';
+import Somi from './images/Somi-profile-icon.png';
+import Hayley from './images/Hayley-profile-icon.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -20,45 +22,44 @@ import 'aos/dist/aos.css';
              <section id="team-page">
                  <div data-aos="fade-right">
                     <h1>Meet the Team</h1>
+                    <p>As a group, we are never short of ideas. <br/> We tackle every challenge through teamwork.</p>
                 </div>
                 <div>
                   <Link to="/contact" className="waves-effect waves-light btn" data-aos="fade-right">Contact us</Link>
                 </div>     
                </section>
                <section id="the-team">
-                   <div className="team-mates" data-aos="zoom-in-right">
+                   <article className="team-mates" data-aos="zoom-in-right">
                      <img src={Cecil} data-aos="zoom-in-right" alt="Software-engineer-profile"/>
-                      <div className="team-mates-details">
+                     
                         <p>Cecil</p>
                         <p>Software Engineer</p>
-                        
-                      </div>
+                  
                      
-                   </div>
-                   <div className="team-mates"  data-aos="zoom-in-right">
+                   </article>
+                   <article className="team-mates"  data-aos="zoom-in-right">
                      <img src={Evelyn} data-aos="zoom-in-right" alt="UX-Designer-profile"/>
-                     <div className="team-mates-details">
+                    
                         <p>Evelyn</p>
                         <p>UX & UI Designer</p>
                       
-                      </div>
-                   </div>
-                   <div className="team-mates" data-aos="zoom-in-right">
-                     <img src={Cecil} data-aos="zoom-in-right" alt="Software-engineer-profile"/>
-                     <div  className="team-mates-details">
+                 
+                   </article>
+                   <article className="team-mates" data-aos="zoom-in-right">
+                     <img src={Somi} data-aos="zoom-in-right" alt="Software-engineer-profile"/>
+                     
                         <p>Somi</p>
                         <p>Graphics Designer</p>
                        
-                      </div>
-                   </div>
-                   <div className="team-mates" data-aos="zoom-in-right">
-                    <img src={Evelyn} data-aos="zoom-in-right" alt="UX-Designer-profile"/>
-                     <div  className="team-mates-details">
+                   
+                   </article>
+                   <article className="team-mates" data-aos="zoom-in-right">
+                    <img src={Hayley} data-aos="zoom-in-right" alt="UX-Designer-profile"/>
+                   
                         <p>Hayley</p>
                         <p>Front End Developer</p>
-                       
-                      </div>
-                   </div>
+                 
+                   </article>
                   
                </section>
             </div>

@@ -12,7 +12,8 @@ import 'aos/dist/aos.css';
 
     }
 
-    //Event to toggle the navitems
+    //Event to toggle the navitems & to transform the toggler
+    
       toggleEvent =()=>{
 
         this.setState({
@@ -21,7 +22,6 @@ import 'aos/dist/aos.css';
         });
       }
    
-
 
        componentDidMount(){
         AOS.init({
@@ -32,7 +32,12 @@ import 'aos/dist/aos.css';
       /**
        * If showNavItems !== null, change toggler state (setting it to a different style) ---achieved: 16.10.2020
        * forEach navItem that is clicked, set showNavItems to false
+       * I might have to attch another event to the <ul> to achieve the above task
        * When showNavItems !== null, if any other part of the page is clicked, set showNavItems to null
+       * 
+       * set a click event on the ul
+       * pass in the event object as a parameter
+       * Use e.target as the condition to setState of showNavItems to false
        * 
        */
 
@@ -45,7 +50,7 @@ import 'aos/dist/aos.css';
                 <nav id="custom-nav">
                     <div className="nav-wrapper"><Link to="/"><img src={logo} data-aos="zoom-in-right" alt="the-talkertive-logo"/></Link>
                        <Link to="/" id="brand" data-aos="zoom-in-right">The Talkertive</Link>
-                   {showNavItems ? ( <ul id="nav-mobile" className="right" >
+                   {showNavItems ? ( <ul id="nav-mobile" className="right">
                        <li>
                           <Link to="/about" data-aos="zoom-in-left">About</Link>
                         </li>

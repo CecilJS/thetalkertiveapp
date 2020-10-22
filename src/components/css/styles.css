@@ -293,10 +293,16 @@ p{
     
 }
 
-#the-team div:nth-of-type(1), #the-team div:nth-of-type(2), #the-team div:nth-of-type(3), #the-team div:nth-of-type(4) {
+#team-page p{
 
-    width: 200px;
-    height: 200px;
+    font-size: 2em!important;
+    text-align: center;
+    
+}
+
+#the-team article:nth-of-type(1), #the-team article:nth-of-type(2), #the-team article:nth-of-type(3), #the-team article:nth-of-type(4) {
+
+  
     border-radius: 50%;
     margin: 5%;
     cursor: pointer;
@@ -481,6 +487,10 @@ display: block;
     text-decoration: underline;
 }
 
+#social-media-icons {
+
+    margin-top: 10px;
+}
 
 
 /*
@@ -542,7 +552,8 @@ p{
 #custom-nav #brand {
     color: #7F817E!important;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em!important;
+    font-size: 1.5em!important;
+    font-weight: bold!important;
 
 }
 
@@ -807,29 +818,77 @@ p{
     justify-content: center;
 }    
 
+#team-page p {
+
+    font-size: 1.6em;
+    color: #7F817E;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
 #the-team {
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    height: 100%;
+  
+   
+}
+
+.team-mates {
+    
     padding-bottom: 5%;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 50%;
+    margin: 0 auto;
+    
+}
+
+
+#the-team article:nth-of-type(1){
+
+   
     margin-top: 10%;
+    width: 100%;
 }
-#the-team .team-mates {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 5%;
-    align-items: center;
-    justify-content: center;
+
+
+#the-team article:nth-of-type(2){
+
+  
+    margin-top: 10%;
+    width: 100%;
 }
+
+
+#the-team article:nth-of-type(3){
+
+   
+    margin-top: 10%;
+    width: 100%;
+}
+
+#the-team article:nth-of-type(4){
+
+  
+    margin-top: 10%;
+    width: 100%;
+}
+
+.team-mates-details p {
+
+    cursor: pointer;
+    margin-bottom: 5%;
+    margin-left: 60%;
+    width: 100%;
+  
+   
+ }
  
 #the-team img {
-    height: 90%!important;
-    width: 90% !important;
-    border-radius: 50%;
-    margin-bottom: 0;
+
+    margin-left: 30%;
     max-width: 100%;
 }
 
@@ -850,10 +909,7 @@ display: block;
     
 }
 
-#the-team .team-mates-details {
 
-   cursor: pointer;
-}
 
 /*
 ========================
@@ -933,10 +989,11 @@ display: block;
 */
                    
 
-#footer{
+footer{
     background-color: #ffffff!important;
     color: #7F817E!important;
     text-align: justify!important;
+  
     
 }
 
@@ -944,6 +1001,7 @@ display: block;
     background-color: #ffffff!important;
     color: #7F817E!important;
     border-top: 1px solid #7F817E;
+    margin-top: 10%;
 }
 
 #copyright-section i {
