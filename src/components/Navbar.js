@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
     state = {
       showNavItems: false,
       changeToggler: false
+      
 
     }
 
@@ -21,8 +22,21 @@ import 'aos/dist/aos.css';
           changeToggler: !this.state.changeToggler
         });
       }
-   
 
+    // function to hide li items on click 
+
+     hideListItems =(e)=> {
+      if(e.target){
+
+        this.setState({
+          showNavItems: false,
+          changeToggler: false
+        })
+      } 
+
+     }
+
+     // init animation lib
        componentDidMount(){
         AOS.init({
           duration : 2000
@@ -50,7 +64,7 @@ import 'aos/dist/aos.css';
                 <nav id="custom-nav">
                     <div className="nav-wrapper"><Link to="/"><img src={logo} data-aos="zoom-in-right" alt="the-talkertive-logo"/></Link>
                        <Link to="/" id="brand" data-aos="zoom-in-right">The Talkertive</Link>
-                   {showNavItems ? ( <ul id="nav-mobile" className="right">
+                   {showNavItems ? ( <ul id="nav-mobile" className="right" onClick={this.hideListItems}>
                        <li>
                           <Link to="/about" data-aos="zoom-in-left">About</Link>
                         </li>
