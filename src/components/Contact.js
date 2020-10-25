@@ -24,7 +24,7 @@ import 'aos/dist/aos.css';
                   <section className="row">
                     <section className="col l6 m12 s12" id="direct-path">
                             <h2>Email us</h2>
-                            <p><img src="https://img.icons8.com/carbon-copy/40/000000/filled-message.png"/>info@thetalkertive.co.uk</p>   
+                            <p><img src="https://img.icons8.com/carbon-copy/40/000000/filled-message.png" alt="social media icon"/>info@thetalkertive.co.uk</p>   
                             
                     </section>
                     <section className="col l6 m12 s12" id="social-path">

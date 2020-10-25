@@ -9,6 +9,14 @@ import 'aos/dist/aos.css';
 
  class Team extends Component {
 
+  state = {
+    firstDisplayedBio: false,
+    secondDisplayedBio: false,
+    thirdDisplayedBio: false,
+    fourthDisplayedBio: false
+    
+  }
+
  // Init animation library
  componentDidMount(){
     AOS.init({
@@ -16,49 +24,144 @@ import 'aos/dist/aos.css';
     })
   }
 
+  /**
+   * Create a method that serves as the event handler for displaying of the bio. ---achieved 25.10.2020
+   * set initial state to false and use a ternary operator to toggle.
+   */
+
+   firstBioDisplay = (e) => {
+ 
+    if(e.target){
+      this.setState({
+        firstDisplayedBio: !this.state.firstDisplayedBio,
+        secondDisplayedBio: false,
+        thirdDisplayedBio: false,
+        fourthDisplayedBio: false
+      })
+
+    }
+      
+   }
+
+
+   secondBioDisplay =(e) => {
+
+    if(e.target){
+      this.setState({
+        firstDisplayedBio: false,
+        secondDisplayedBio: !this.state.secondDisplayedBio,
+        thirdDisplayedBio: false,
+        fourthDisplayedBio: false
+      })
+    }
+    
+   }
+
+
+   thirdBioDisplay = (e) => {
+ 
+    if(e.target){
+      this.setState({
+        firstDisplayedBio: false,
+        secondDisplayedBio: false,
+        thirdDisplayedBio: !this.state.thirdDisplayedBio,
+        fourthDisplayedBio: false
+      })
+
+    }
+   
+ }
+
+
+ fourthBioDisplay = (e) => {
+ 
+  if(e.target){
+    this.setState({
+      firstDisplayedBio: false,
+      secondDisplayedBio: false,
+      thirdDisplayedBio: false,
+      fourthDisplayedBio: !this.state.fourthDisplayedBio
+    })
+  }
+  
+}
+
     render() {
+
+      const {firstDisplayedBio, secondDisplayedBio, thirdDisplayedBio, fourthDisplayedBio } = this.state;
+
         return (
              <div>
              <section id="team-page">
                  <div data-aos="fade-right">
                     <h1>Meet the Team</h1>
-                    <p>As a group, we are never short of ideas. <br/> We tackle every challenge through teamwork.</p>
+                    <p>As a team, we are never short of ideas. <br/> We tackle every challenge through teamwork.</p>
                 </div>
                 <div>
                   <Link to="/contact" className="waves-effect waves-light btn" data-aos="fade-right">Contact us</Link>
                 </div>     
                </section>
                <section id="the-team">
-                   <article className="team-mates" data-aos="zoom-in-right">
-                     <img src={Cecil} data-aos="zoom-in-right" alt="Software-engineer-profile"/>
+                   <article data-aos="zoom-in-right" onClick={this.firstBioDisplay}>
+                   {!firstDisplayedBio ?(<img src={Cecil} data-aos="zoom-in-right" onClick={this.firstBioDisplay} alt="Software-engineer-profile"/>) : (
+                       <div data-aos="zoom-in-right">
+                        <p data-aos="zoom-in-right" id="first-team-mate"> 
+                            As a Software Engineer, 
+                            Cecil is always keen to use his indepth technical 
+                            knowledge to solve problems that meet client needs. 
+                          </p>
+                       </div>
+                         ) }
                      
-                        <p>Cecil</p>
-                        <p>Software Engineer</p>
+                        <p className="team-mate-title" onClick={this.firstBioDisplay} data-aos="fade-up-right">Cecil | Software Engineer</p>
+                 
+                      
                   
                      
                    </article>
-                   <article className="team-mates"  data-aos="zoom-in-right">
-                     <img src={Evelyn} data-aos="zoom-in-right" alt="UX-Designer-profile"/>
+                   <article onClick={this.secondBioDisplay}  data-aos="zoom-in-right">
+                   {!secondDisplayedBio ? (<img src={Evelyn} data-aos="zoom-in-right" alt="UX-Designer-profile"/>) :(
+                          <div>
+                            <p data-aos="zoom-in-right" id="second-team-mate">
+                              Evelyn is a UX/UI Designer and an Illustrator. 
+                              She is always doodling every thought that can be a meaningful idea, 
+                              while exploring creative ways to find visual solutions. 
+                            </p>
+                          </div>
+                          ) }
                     
-                        <p>Evelyn</p>
-                        <p>UX & UI Designer</p>
+                        <p className="team-mate-title" onClick={this.secondBioDisplay}>Evelyn | UX & UI Designer</p>
+                       
                       
                  
                    </article>
-                   <article className="team-mates" data-aos="zoom-in-right">
-                     <img src={Somi} data-aos="zoom-in-right" alt="Software-engineer-profile"/>
+                   <article onClick={this.thirdBioDisplay} data-aos="zoom-in-right">
+                   {!thirdDisplayedBio ? (<img src={Somi} data-aos="zoom-in-right" onClick={this.thirdBioDisplay} alt="Software-engineer-profile"/>) 
+                     : 
+                   (      <div>
+                            <p data-aos="zoom-in-right"id="third-team-mate">
+                            Somi is a meticulous Graphic Designer who is very passionate about design, photography, and aesthetics. 
+                            </p>
+                          </div>
+                          ) }
                      
-                        <p>Somi</p>
-                        <p>Graphics Designer</p>
-                       
+                        <p className="team-mate-title" onClick={this.thirdBioDisplay}>Somi | Graphics Designer</p>
+                         
                    
                    </article>
-                   <article className="team-mates" data-aos="zoom-in-right">
-                    <img src={Hayley} data-aos="zoom-in-right" alt="UX-Designer-profile"/>
-                   
-                        <p>Hayley</p>
-                        <p>Front End Developer</p>
+                   <article onClick={this.fourthBioDisplay } data-aos="zoom-in-right">
+                   {!fourthDisplayedBio ? (<img src={Hayley} data-aos="zoom-in-right" onClick={this.fourthBioDisplay } alt="UX-Designer-profile"/>)
+                     : 
+                         (  <div>
+                            <p data-aos="zoom-in-right" id="fourth-team-mate">
+                              Hayley is a Front End Developer who also loves photography.
+                            </p>
+                           </div>) }
                  
+                   
+                        <p className="team-mate-title" onClick={this.fourthBioDisplay }>Hayley | Front End Developer</p>
+                        
+                         
                    </article>
                   
                </section>
