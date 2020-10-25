@@ -62,8 +62,8 @@ import 'aos/dist/aos.css';
         return (
            
                 <nav id="custom-nav">
-                    <div className="nav-wrapper"><Link to="/"><img src={logo} data-aos="zoom-in-right" alt="the-talkertive-logo"/></Link>
-                       <Link to="/" id="brand" data-aos="zoom-in-right">The Talkertive</Link>
+                    <div className="nav-wrapper"><Link to="/" onClick={this.hideListItems}><img src={logo} data-aos="zoom-in-right" alt="the-talkertive-logo"/></Link>
+                       <Link to="/" id="brand" data-aos="zoom-in-right">The Talkative</Link>
                    {showNavItems ? ( <ul id="nav-mobile" className="right" onClick={this.hideListItems}>
                        <li>
                           <Link to="/about" data-aos="zoom-in-left">About</Link>

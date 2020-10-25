@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
                <section className="col l12 m12 s12">
                   <article id="our-history">
                     <p>
-                        The Talkertive was established in 2017 as a platform where Software developers, UX designers and Graphic designers collaborate on projects.
+                        The Talkative was established in 2017 as a platform where Software developers, UX designers and Graphic designers collaborate on projects.
                     </p>
 
                     <p>
