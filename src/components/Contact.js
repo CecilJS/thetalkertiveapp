@@ -19,7 +19,7 @@ import 'aos/dist/aos.css';
         <section className="row">
         <section className="col l12 m12 s12">
             <h1>Let's work together</h1>
-              <p>We are really delighted that you have chosen to work with us. <br/> Simply drop us an email and we will in touch.</p>
+              <p>We are really delighted that you have chosen to work with us. <br/> Simply drop us an email and we will be in touch.</p>
                  <section className="container" id="contact-path">
                   <section className="row">
                     <section className="col l6 m12 s12" id="direct-path">

@@ -27,6 +27,7 @@ import 'aos/dist/aos.css';
   /**
    * Create a method that serves as the event handler for displaying of the bio. ---achieved 25.10.2020
    * set initial state to false and use a ternary operator to toggle.
+   * Think of using a loop and an if statement to refactor the function
    */
 
    firstBioDisplay = (e) => {
@@ -113,7 +114,7 @@ import 'aos/dist/aos.css';
                        </div>
                          ) }
                      
-                        <p className="team-mate-title" onClick={this.firstBioDisplay} data-aos="fade-up-right">Cecil | Software Engineer</p>
+                        <p className="team-mate-title" onClick={this.firstBioDisplay}>Cecil | Software Engineer</p>
                  
                       
                   
@@ -121,7 +122,7 @@ import 'aos/dist/aos.css';
                    </article>
                    <article onClick={this.secondBioDisplay}  data-aos="zoom-in-right">
                    {!secondDisplayedBio ? (<img src={Evelyn} data-aos="zoom-in-right" alt="UX-Designer-profile"/>) :(
-                          <div>
+                          <div data-aos="zoom-in-right">
                             <p data-aos="zoom-in-right" id="second-team-mate">
                               Evelyn is a UX/UI Designer and an Illustrator. 
                               She is always doodling every thought that can be a meaningful idea, 
@@ -138,7 +139,7 @@ import 'aos/dist/aos.css';
                    <article onClick={this.thirdBioDisplay} data-aos="zoom-in-right">
                    {!thirdDisplayedBio ? (<img src={Somi} data-aos="zoom-in-right" onClick={this.thirdBioDisplay} alt="Software-engineer-profile"/>) 
                      : 
-                   (      <div>
+                   (      <div data-aos="zoom-in-right">
                             <p data-aos="zoom-in-right"id="third-team-mate">
                             Somi is a meticulous Graphic Designer who is very passionate about design, photography, and aesthetics. 
                             </p>
@@ -152,7 +153,7 @@ import 'aos/dist/aos.css';
                    <article onClick={this.fourthBioDisplay } data-aos="zoom-in-right">
                    {!fourthDisplayedBio ? (<img src={Hayley} data-aos="zoom-in-right" onClick={this.fourthBioDisplay } alt="UX-Designer-profile"/>)
                      : 
-                         (  <div>
+                         (  <div data-aos="zoom-in-right">
                             <p data-aos="zoom-in-right" id="fourth-team-mate">
                               Hayley is a Front End Developer who also loves photography.
                             </p>
