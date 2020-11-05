@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './css/styles.css';
+ 
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
