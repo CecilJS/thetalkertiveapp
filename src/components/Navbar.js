@@ -65,10 +65,7 @@ import 'aos/dist/aos.css';
                 <nav id="custom-nav">
                     <div className="nav-wrapper">
                     <Link to="/" onClick={this.hideListItems}>
-                    <picture data-aos="fade-right">
-                                <source media="(max-width: 576px)" srcSet={smLogo} alt="We work better together"/>
-                                <img src={logo} data-aos="zoom-in-right" alt="the-talkertive-logo"/>
-                            </picture>
+                        <img src={logo} data-aos="zoom-in-right" alt="the-talkertive-logo"/>
                     </Link>
                        <Link to="/" id="brand" data-aos="zoom-in-right">The Talkative</Link>
                    {showNavItems ? ( <ul id="nav-mobile" className="right" onClick={this.hideListItems}>
