@@ -44,7 +44,6 @@ import 'aos/dist/aos.css';
       
    }
 
-
    secondBioDisplay =(e) => {
 
     if(e.target){
@@ -57,7 +56,6 @@ import 'aos/dist/aos.css';
     }
     
    }
-
 
    thirdBioDisplay = (e) => {
  
@@ -72,7 +70,6 @@ import 'aos/dist/aos.css';
     }
    
  }
-
 
  fourthBioDisplay = (e) => {
  

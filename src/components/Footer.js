@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faLinkedin, faTwitter} from '@fortawesome/free-brands-svg-icons';
+
 
 class Footer extends Component {
     render() {
@@ -17,8 +20,15 @@ class Footer extends Component {
                   
                       </div>
                       <div className="col l4 m12 s12" id="social-media-icons">
-                        <a href="https://twitter.com/TheTalkertivee" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/40/000000/twitter-circled.png" alt="twitter-social-media-icon"/></a>
-                        <a  href="https://www.linkedin.com/company/28174397/admin/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/40/000000/linkedin-circled.png" alt="linkedin-social-media-icon"/></a>
+                        <a href="https://twitter.com/TheTalkertivee" target="_blank" rel="noopener noreferrer">
+                          <FontAwesomeIcon icon={faTwitter} size="lg md sm" />
+                          
+                        </a>
+
+                        <a  href="https://www.linkedin.com/company/28174397/admin/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin} size="lg md sm" />
+                        
+                        </a>
                       </div>
                     </section>
                 </footer>
