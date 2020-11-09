@@ -21,12 +21,12 @@ class Footer extends Component {
                       </div>
                       <div className="col l4 m12 s12" id="social-media-icons">
                         <a href="https://twitter.com/TheTalkertivee" target="_blank" rel="noopener noreferrer">
-                          <FontAwesomeIcon icon={faTwitter} size="lg md sm" />
+                          <FontAwesomeIcon icon={faTwitter} size="lg" />
                           
                         </a>
 
                         <a  href="https://www.linkedin.com/company/28174397/admin/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faLinkedin} size="lg md sm" />
+                        <FontAwesomeIcon icon={faLinkedin} size="lg" />
                         
                         </a>
                       </div>
