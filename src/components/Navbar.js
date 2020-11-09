@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import './css/styles.css';
-import logo from './images/Talkative-logo-horizontal-md.png'
+import logo from './images/the-talkertive-logo.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -63,7 +63,7 @@ import 'aos/dist/aos.css';
            
                 <nav id="custom-nav">
                     <div className="nav-wrapper"><Link to="/" onClick={this.hideListItems}><img src={logo} data-aos="zoom-in-right" alt="the-talkertive-logo"/></Link>
-                      
+                       <Link to="/" id="brand" data-aos="zoom-in-right">The Talkative</Link>
                    {showNavItems ? ( <ul id="nav-mobile" className="right" onClick={this.hideListItems}>
                        <li>
                           <Link to="/about" data-aos="zoom-in-left">About</Link>
