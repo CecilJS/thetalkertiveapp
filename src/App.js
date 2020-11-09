@@ -26,6 +26,7 @@ import Privacy from './components/Privacy';
        <Navbar/>
       
       <Switch>
+        
         <Route exact path="/" component={Home}>
        
         </Route>
@@ -46,6 +47,9 @@ import Privacy from './components/Privacy';
        
         </Route>
         <Route exact path="/privacy-policy" component={Privacy}>
+       
+        </Route>
+        <Route exact path="/*" component={Home}>
        
         </Route>
 

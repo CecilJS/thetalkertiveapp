@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import cecilProfilePicture from './images/Cecil-pic.png';
-import evelynProfilePicture from './images/Evelyn-pic.png';
-import somiProfilePicture from './images/Somi-pic.png';
-import hayleyProfilePicture from './images/Hayley-pic.png';
+import cecilProfilePicture from './images/Cecil-icon-01-01-md.png';
+import evelynProfilePicture from './images/Evelyn-icon-01-01-md.png';
+import somiProfilePicture from './images/Somi-icon-01-01-md.png';
+import hayleyProfilePicture from './images/Hailey-icon-01-01-md.png';
 
 
  class Developer extends Component {
