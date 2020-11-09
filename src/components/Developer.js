@@ -26,7 +26,7 @@ import hayleyXmdProfilePicture from './images/Hailey-icon-01-01-xmd.png';
                             <picture data-aos="fade-right">
                                 <source media="(max-width: 576px)" srcSet={somiSmProfilePicture} alt="We work better together"/>
                                 <source media="(max-width: 992px)" srcSet={somiXmdProfilePicture} alt="We work better together" />
-                                <img src={somiProfilePicture}  alt="We work better together"/>
+                                <img src={somiProfilePicture}  data-aos="fade-right" alt="We work better together"/>
                             </picture>
                         </div>
                         <div>
