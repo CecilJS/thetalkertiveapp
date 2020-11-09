@@ -11,9 +11,9 @@ class Footer extends Component {
                           <p>The Talkertive © Copyright 2020 - All Right Reserved.</p> 
                         </div>
                       <div className="col l4 m12 s12" id="legal-notices">
-                          <ul>
-                            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-                          </ul>
+                          <div>
+                            <p><Link to="/privacy-policy">Privacy Policy | info@thetalkertive.co.uk</Link></p>
+                          </div>
                   
                       </div>
                       <div className="col l4 m12 s12" id="social-media-icons">
