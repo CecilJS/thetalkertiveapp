@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import cecilProfilePicture from './images/Cecil-pic.png';
+import evelynProfilePicture from './images/Evelyn-pic.png';
+import somiProfilePicture from './images/Somi-pic.png';
+import hayleyProfilePicture from './images/Hayley-pic.png';
+
 
  class Developer extends Component {
 
@@ -8,12 +13,32 @@ import { Link } from "react-router-dom";
         return (
             <div className="container" id="developer-path">
                 <h1><span>Let's</span> Collaborate</h1>
-                <div className="carousel">
-                        <a className="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"/></a>
-                        <a className="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"/></a>
-                        <a className="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"/></a>
-                        <a className="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"/></a>
-                        <a className="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"/></a>
+                   <div id="dev-showcase">
+                        <div>
+                            <img src={somiProfilePicture} data-aos="fade-right" alt="We work better together"/>
+                        </div>
+                        <div>
+                            <p>Graphic<br/> Design</p>
+                        </div>
+                        <div>
+                            <p>UI/UX <br/>Design</p>
+                        </div>
+                        <div>
+                            <img src={evelynProfilePicture} data-aos="fade-right" alt="We work better together"/>
+                        </div>
+                        <div>
+                            <img src={hayleyProfilePicture} data-aos="fade-right" alt="We work better together"/>
+                        </div>
+                        <div>
+                          <p>Web <br/>Development</p>
+                        </div>
+                        <div>
+                          <p>Software <br/>Engineering</p>
+                        </div>
+                        <div>
+                          <img src={cecilProfilePicture} data-aos="fade-right" alt="We work better together"/> 
+                        </div>
+                          
                     </div>
                     <div>
                     <h2>Benefits of Collaboration</h2>

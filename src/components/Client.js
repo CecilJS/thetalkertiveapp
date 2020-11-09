@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import 'materialize-css/dist/css/materialize.min.css';
+import thetalkative from './images/Talkative-logo-client-page-01.png';
+import tendercrown from './images/Tender-Crown-logo-client-pg-01.png';
+import togetherasone from './images/together-logo-client-page-01.png';
+import deron from './images/Deron-logo-client-page-01.png';
 
  class Client extends Component {
 
@@ -16,12 +20,20 @@ import 'materialize-css/dist/css/materialize.min.css';
             <div className="container" id="client-journey">
             <h1>Start <span>a new project</span></h1>
             <p>Before you start the journey, have a look at some of the work we have done.</p>
-                   <div className="carousel">
-                        <a className="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"/></a>
-                        <a className="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"/></a>
-                        <a className="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"/></a>
-                        <a className="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"/></a>
-                        <a className="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"/></a>
+                   <div id="client-showcase">
+                        <div className="client">
+                            <img src={thetalkative} data-aos="fade-right" alt="some of our happy clients" />
+                        </div>
+                        <div className="client">
+                            <img src={tendercrown} data-aos="fade-right" alt="some of our happy clients"/>
+                        </div>
+                        <div className="client">
+                            <img src={togetherasone} data-aos="fade-right" alt="some of our happy clients"/>
+                        </div>
+                        <div className="client">
+                          <img src={deron} data-aos="fade-right" alt="some of our happy clients"/> 
+                        </div>
+                      <i className="material-icons right">fiber_manual_record</i>
                     </div>
                 <div id="client-contact">
                   <Link to="/contact" className="waves-effect waves-light btn" data-aos="fade-right">Contact us</Link>
