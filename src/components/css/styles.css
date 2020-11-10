@@ -517,6 +517,27 @@ margin-top: 10%;
     margin-top: 5%;
 }
 
+.skills-heading h2 {
+    color: #fafafa!important;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding-top: 5%;;
+}
+
+.skill-set {
+
+    color: #fafafa;
+    font-size: 2em;
+    padding-top: 2%;
+    text-align: center;
+
+
+}
+
+.skill-set li {
+    padding-top: 5%;
+}
+
 /*
 ========================
   Contact styles styles
@@ -559,6 +580,9 @@ margin-top: 10%;
 
 #contact-path {
     margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
  
 }
 
@@ -572,8 +596,9 @@ margin-top: 10%;
 
     height: 200px;
     padding-left: 10%;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
-
 
 
 
@@ -581,10 +606,14 @@ margin-top: 10%;
     border-left: 1px solid #7F817E!important;
     padding-left: 10%;
     height: 200px;
-
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
-
+.message {
+    color: #7F817E;
+    cursor: pointer;
+}
 
 
 
@@ -770,8 +799,8 @@ p{
 
 #toggler {
     position: absolute;
-    right: 15%;
-    bottom: 94%;
+    right: 25%;
+    bottom: 92%;
     left: 90%;
     cursor: pointer;
     border: 2px solid #7F817E;
@@ -779,7 +808,7 @@ p{
     padding: 15px;
     height: 50px;
     width: 50px;
-    z-index: 2;
+    z-index: 200;
     background-color: #fafafa!important;
 } 
 
@@ -806,8 +835,8 @@ p{
 
 #transformed-toggler {
     position: absolute;
-    right: 15%;
-    bottom: 94%;
+    right: 25%;
+    bottom: 92%;
     left: 90%;
     cursor: pointer;
     border: 2px solid #7F817E;
@@ -815,7 +844,7 @@ p{
     padding: 15px;
     height: 50px;
     width: 50px;
-    z-index: 2;
+    z-index: 200;
     background-color: #fafafa!important;
     
 } 
@@ -858,7 +887,7 @@ p{
     flex-direction: column;
     height: 100vh;
     width: 50vw;
-    z-index: 2;
+    z-index: 200;
     
 }
 
@@ -869,7 +898,7 @@ p{
     position: relative;
     top: 150%;
     right: 0;
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 20px;
 }
 
@@ -1135,13 +1164,13 @@ p{
 
 #contact-page h1{
 
-    font-size: 3em!important;
+    font-size: 2em!important;
     text-align: center;
     
 }
 
 #contact-page p {
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: center;
    
 }
@@ -1158,43 +1187,36 @@ p{
 
 #contact-path {
     margin-top: 10%;
-    display: flex!important;
-    flex-direction: column!important;
- 
-}
-
-#contact-path h2, #social-path h2 {
-    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
  
 }
 
 #contact-path p {
 
     text-align: justify;
-
+   
 }
 
 #direct-path{
 
-    border-right: none!important;
-    margin-bottom: 5%;
-    padding-left: 5%;
+    height: 200px;
+    padding-left: 10%;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-#direct-path p {
-    padding-bottom: 10%;
-}
 
-#direct-path p:nth-of-type(2), #help-path p:nth-of-type(2){
-font-size: 1.5em;
-
-}
 
 #help-path {
-    height: 280px;
-    padding-left: 5%;
+    border-top: 1px solid #7F817E!important;
+    border-left: none!important;
+    padding-left: 10%;
+    height: 200px;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
-
 
 
 
@@ -1382,8 +1404,8 @@ p{
 
 #toggler {
     position: absolute;
-    right: 15%;
-    bottom: 94%;
+    right: 25%;
+    bottom: 92%;
     left: 90%;
     cursor: pointer;
     border: 2px solid #7F817E;
@@ -1419,8 +1441,8 @@ p{
 
 #transformed-toggler {
     position: absolute;
-    right: 15%;
-    bottom: 94%;
+    right: 25%;
+    bottom: 92%;
     left: 90%;
     cursor: pointer;
     border: 2px solid #7F817E;
@@ -1925,38 +1947,38 @@ margin-top: 10%;
 
 }
 
-#social-path {
-
-    padding-left: 0;
-}
-
 #contact-path {
     margin-top: 10%;
- 
-}
-
-#contact-path h2, #social-path h2 {
-    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
  
 }
 
 #contact-path p {
 
     text-align: justify;
+   
 }
 
 #direct-path{
 
-    border-bottom: 1px solid #7F817E!important;
-    border-right: none!important;
-    margin-bottom: 5%;
-    
+    height: 200px;
+    padding-left: 10%;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-#direct-path p {
-    padding-bottom: 10%;
-}
 
+
+#help-path {
+    border-top: 1px solid #7F817E!important;
+    border-left: none!important;
+    padding-left: 10%;
+    height: 200px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
 
 
 
@@ -2138,8 +2160,8 @@ p{
 
 #toggler {
     position: absolute;
-    right: 15%;
-    bottom: 94%;
+    right: 25%;
+    bottom: 92%;
     left: 90%;
     cursor: pointer;
     border: 2px solid #7F817E;
@@ -2491,36 +2513,37 @@ p{
 
 #contact-path {
     margin-top: 10%;
- 
-}
-
-#contact-path h2, #social-path h2 {
-    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
  
 }
 
 #contact-path p {
 
     text-align: justify;
+   
 }
 
 #direct-path{
 
-    border-bottom: none!important;
-    border-right: none!important;
-    margin-bottom: 5%;
-    padding-right: 5%;
-    
+    height: 200px;
+    padding-left: 10%;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-#direct-path p {
-    padding-bottom: 10%;
-}
+
 
 #help-path {
-    height: 210px;
-    padding-left: 5%;
+    border-top: 1px solid #7F817E!important;
+    border-left: none!important;
+    padding-left: 10%;
+    height: 200px;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
+
 
 
 
@@ -2699,8 +2722,8 @@ p{
 
 #toggler {
     position: absolute;
-    right: 15%;
-    bottom: 82%;
+    right: 35%;
+    bottom: 92%;
     left: 90%;
     cursor: pointer;
     border: 2px solid #7F817E;
@@ -2737,7 +2760,7 @@ p{
 #transformed-toggler {
     position: absolute;
     right: 15%;
-    bottom: 82%;
+    bottom: 92%;
     left: 90%;
     cursor: pointer;
     border: 2px solid #7F817E;
@@ -2793,9 +2816,9 @@ p{
 #custom-nav ul a {
 
     color: #ffffff!important;
-    text-align: center;
+    text-align: end;
     position: relative;
-    top: 10%;
+    top: 150%;
     right: 0;
     font-size: 1em;
     padding: 2px;
@@ -3042,40 +3065,38 @@ p{
 
 }
 
-#social-path {
-
-    padding-left: 0;
-}
-
 #contact-path {
     margin-top: 10%;
- 
-}
-
-#contact-path h2, #social-path h2 {
-    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
  
 }
 
 #contact-path p {
 
     text-align: justify;
+   
 }
 
 #direct-path{
 
-    border-bottom: 1px solid #7F817E!important;
-    border-right: none!important;
-    margin-bottom: 5%;
-    
-}
-
-#direct-path p {
-    padding-bottom: 10%;
+    height: 200px;
+    padding-left: 10%;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 
 
+#help-path {
+    border-top: 1px solid #7F817E!important;
+    border-left: none!important;
+    padding-left: 10%;
+    height: 200px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
 
 
 
@@ -3587,7 +3608,7 @@ p{
 }
 
 #contact-page p {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -3600,36 +3621,37 @@ p{
 
 }
 
-#social-path {
-
-    padding-left: 0;
-}
-
 #contact-path {
     margin-top: 10%;
- 
-}
-
-#contact-path h2, #social-path h2 {
-    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
  
 }
 
 #contact-path p {
 
     text-align: justify;
+   
 }
 
 #direct-path{
 
-    border-bottom: 1px solid #7F817E!important;
-    border-right: none!important;
-    margin-bottom: 5%;
-    
+    height: 200px;
+    padding-left: 10%;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-#direct-path p {
-    padding-bottom: 10%;
+
+
+#help-path {
+    border-top: 1px solid #7F817E!important;
+    border-left: none!important;
+    padding-left: 10%;
+    height: 200px;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
 
@@ -3815,8 +3837,8 @@ p{
 
 #toggler {
     position: absolute;
-    right: 25%;
-    bottom: 91%;
+    right: 15%;
+    bottom: 93%;
     left: 80%;
     cursor: pointer;
     border: 2px solid #7F817E;
@@ -3858,8 +3880,8 @@ p{
 
 #transformed-toggler {
     position: absolute;
-    right: 25%;
-    bottom: 90%;
+    right: 15%;
+    bottom: 93%;
     left: 80%;
     cursor: pointer;
     border: 2px solid #7F817E;
@@ -4155,7 +4177,7 @@ p{
 }
 
 #contact-page p {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -4168,40 +4190,39 @@ p{
 
 }
 
-#social-path {
-
-    padding-left: 0;
-}
-
 #contact-path {
     margin-top: 10%;
- 
-}
-
-#contact-path h2, #social-path h2 {
-    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
  
 }
 
 #contact-path p {
 
     text-align: justify;
+   
 }
 
 #direct-path{
 
-    border-bottom: 1px solid #7F817E!important;
-    border-right: none!important;
-    margin-bottom: 5%;
-    
-}
-
-#direct-path p {
-    padding-bottom: 10%;
+    height: 200px;
+    padding-left: 10%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: 10%;
 }
 
 
 
+#help-path {
+    border-top: 1px solid #7F817E!important;
+    border-left: none!important;
+    padding-left: 10%;
+    height: 200px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
 
 
 

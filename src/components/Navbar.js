@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import './css/styles.css';
 import logo from './images/the-talkative-logo-square-md.png';
-import smLogo from './images/the-talkative-logo-square-sm.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

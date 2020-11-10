@@ -16,8 +16,30 @@ import hayleyXmdProfilePicture from './images/Hailey-icon-01-01-xmd.png';
 
  class Developer extends Component {
 
+    state = {
+        graphicsDetail: true,
+        uxDetail: true
+    }
+
+    showDetail = (e) => {
+        if(e.target){
+            this.setState({
+                graphicsDetail: !this.state.graphicsDetail
+            })
+        }
+      else if(e.target){
+        this.setState({
+            uxDetail: !this.state.uxDetail
+        })
+      }
+
+     
+        
+    }
  
     render() {
+
+        const {graphicsDetail, uxDetail } = this.state;
         return (
             <div className="container" id="developer-path">
                 <h1><span>Let's</span> Collaborate</h1>
@@ -29,11 +51,31 @@ import hayleyXmdProfilePicture from './images/Hailey-icon-01-01-xmd.png';
                                 <img src={somiProfilePicture}  data-aos="fade-right" alt="We work better together"/>
                             </picture>
                         </div>
-                        <div>
-                            <p>Graphic<br/> Design</p>
+                        <div onClick={this.showDetail} className="firstDiv">
+                           {graphicsDetail ? (<p data-aos="fade-right">Graphic<br/> Design</p>) : 
+                            (
+                            <div className="skills-heading" data-aos="fade-right">
+                                <h2>Field of Expertise</h2>
+                            <ul className="skill-set" data-aos="fade-right">
+                                <li>Logo Design</li>
+                                <li>Business cards</li>
+                                <li>Signage Design</li>
+                            </ul>
+                            </div>)
+                           }
                         </div>
-                        <div>
-                            <p>UI/UX <br/>Design</p>
+                        <div onClick={this.showDetail}>
+                           {uxDetail ? (<p>UI/UX <br/>Design</p>) :
+                            (
+                            <div className="skills-heading" data-aos="fade-right">
+                                <h2>Field of Expertise</h2>
+                            <ul className="skill-set" data-aos="fade-right">
+                                <li>Logo Design</li>
+                                <li>Business cards</li>
+                                <li>Signage Design</li>
+                            </ul>
+                            </div>)
+                           }
                         </div>
                         <div>
                             <picture data-aos="fade-right">
