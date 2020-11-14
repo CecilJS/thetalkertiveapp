@@ -173,7 +173,11 @@ p{
     font-family: 'Open Sans', sans-serif;
 }
 
-
+#ourCore {
+    color: #7F817E;
+    text-shadow: 3px 1px 1px  #7F817E;
+   
+}
 
 #learn-more {
     font-family: 'Open Sans', sans-serif; 

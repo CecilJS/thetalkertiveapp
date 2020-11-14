@@ -4,12 +4,16 @@ import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+const ourCore = ['Software Egineers', 'UX Designers', 'Graphic Designers', 'Web Developers'];
+const ourCoreAnimation = ['zoom-in-up', 'zoom-in', 'zoom-in-down', 'zoom-out-up'];
+let count = 0;
 
-
- class Home extends Component {
+class Home extends Component {
 
   state = {
-    moreInfo: false
+    moreInfo: false,
+    theCore: ourCore[0],
+    theAnimation: ourCoreAnimation[0]
   }
 
   showMore = () => {
@@ -24,19 +28,47 @@ import 'aos/dist/aos.css';
         AOS.init({
           duration : 2000
         })
+
+        setTimeout(()=>{
+          this.updateCta();
+          setInterval(this.updateCta,5000);
+      }, 2500);
+      
       }
 
+      //Clear the funtion when unmounted
+
+     
+     
+
+      // Function that updates state with either of the values of ourCore every 5 seconds
+     updateCta = ()=> {
+      count++;
+      if(count >= ourCore.length){
+
+        count = 0;
+       }
+
+      this.setState({
+        theCore: ourCore[count],
+        theAnimation: ourCoreAnimation[count]
+       
+      })
+
+       }
+
+     
 
     render() {
 
       // Destructuring for use inside JSX
-      const {moreInfo} = this.state
+      const {moreInfo, theCore, theAnimation } = this.state
       
         return (
             <section >
             <div className="container row" id="cta" >
               <div className="col l12 m12 s12">
-                <h1 data-aos="fade-right">Welcome to the World of Software Designers</h1>
+                <h1>Welcome to the World of <span data-aos={theAnimation} id="ourCore">{theCore}</span></h1>
                 <p data-aos="fade-right">Let us dive into your idea and build a concept</p>
                 <button className="waves-effect waves-light btn" data-aos="fade-right" onClick={this.showMore}><i className="material-icons right">fiber_manual_record</i>Learn more</button>
                 {moreInfo ? (<p id="learn-more" data-aos="zoom-in-right"> 

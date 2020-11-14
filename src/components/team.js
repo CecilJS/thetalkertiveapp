@@ -157,7 +157,7 @@ import 'aos/dist/aos.css';
                            </div>) }
                  
                    
-                        <p className="team-mate-title" onClick={this.fourthBioDisplay }>Hayley | Front End Developer</p>
+                        <p className="team-mate-title" onClick={this.fourthBioDisplay }>Hayley | Juniour Front End Developer</p>
                         
                          
                    </article>

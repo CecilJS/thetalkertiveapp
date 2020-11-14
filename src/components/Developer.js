@@ -14,32 +14,45 @@ import hayleySmProfilePicture from './images/Hailey-icon-01-01-sm.png';
 import hayleyXmdProfilePicture from './images/Hailey-icon-01-01-xmd.png';
 
 
+
  class Developer extends Component {
 
     state = {
         graphicsDetail: true,
-        uxDetail: true
+        uxDetail: true,
+        webDev: true,
+        softwareEng: true
     }
 
-    showDetail = (e) => {
-        if(e.target){
-            this.setState({
-                graphicsDetail: !this.state.graphicsDetail
-            })
-        }
-      else if(e.target){
+    toggleGraphics = () => {
+        this.setState({
+            graphicsDetail: !this.state.graphicsDetail
+             })
+          }
+
+    toggleUX = () => {
         this.setState({
             uxDetail: !this.state.uxDetail
-        })
+            })
+        }
+
+    toggleWeb = () => {
+        this.setState({
+           webDev: !this.state.webDev
+        })    
       }
 
-     
+    toggleSoftwareEng = () => {
+        this.setState({
+            softwareEng: !this.state.softwareEng
+        })
         
-    }
+      } 
+    
  
     render() {
 
-        const {graphicsDetail, uxDetail } = this.state;
+        const {graphicsDetail, uxDetail, webDev, softwareEng } = this.state;
         return (
             <div className="container" id="developer-path">
                 <h1><span>Let's</span> Collaborate</h1>
@@ -51,28 +64,31 @@ import hayleyXmdProfilePicture from './images/Hailey-icon-01-01-xmd.png';
                                 <img src={somiProfilePicture}  data-aos="fade-right" alt="We work better together"/>
                             </picture>
                         </div>
-                        <div onClick={this.showDetail} className="firstDiv">
+                        <div onClick={this.toggleGraphics}>
                            {graphicsDetail ? (<p data-aos="fade-right">Graphic<br/> Design</p>) : 
                             (
                             <div className="skills-heading" data-aos="fade-right">
                                 <h2>Field of Expertise</h2>
                             <ul className="skill-set" data-aos="fade-right">
                                 <li>Logo Design</li>
-                                <li>Business cards</li>
+                                <li>Business Cards</li>
                                 <li>Signage Design</li>
                             </ul>
                             </div>)
                            }
                         </div>
-                        <div onClick={this.showDetail}>
+                        <div onClick={this.toggleUX}>
                            {uxDetail ? (<p>UI/UX <br/>Design</p>) :
                             (
                             <div className="skills-heading" data-aos="fade-right">
                                 <h2>Field of Expertise</h2>
                             <ul className="skill-set" data-aos="fade-right">
-                                <li>Logo Design</li>
-                                <li>Business cards</li>
-                                <li>Signage Design</li>
+                               
+                                <li>Prototyping</li>
+                                <li>Illustration </li>
+                                <li>User Research</li>
+                                <li>Information Architecture </li>
+
                             </ul>
                             </div>)
                            }
@@ -91,11 +107,30 @@ import hayleyXmdProfilePicture from './images/Hailey-icon-01-01-xmd.png';
                                 <img src={hayleyProfilePicture} data-aos="fade-right" alt="We work better together"/>
                             </picture>  
                         </div>
-                        <div>
-                          <p>Web <br/>Development</p>
+                        <div onClick={this.toggleWeb}>
+                          {webDev ? (<p>Web <br/>Development</p>) : (
+                            <div className="skills-heading" data-aos="fade-right">
+                                <h2>Field of Expertise</h2>
+                            <ul className="skill-set" data-aos="fade-right">
+                                <li>Web Design</li>
+                                <li>E-commerce</li>
+                                <li>Web Development</li>
+                            </ul>
+                            </div>
+                          )}
                         </div>
-                        <div>
-                          <p>Software <br/>Engineering</p>
+                        <div onClick={this.toggleSoftwareEng}>
+                          {softwareEng ? (<p>Software <br/>Engineering</p>) : (
+                            <div className="skills-heading" data-aos="fade-right">
+                                <h2>Field of Expertise</h2>
+                            <ul className="skill-set" data-aos="fade-right">
+                                <li>Mobile Apps</li>
+                                <li>Systems Design</li>
+                                <li>Web Applications</li>
+                                <li>Desktop Applications</li>
+                            </ul>
+                            </div>
+                          )}
                         </div>
                         <div>
                             <picture data-aos="fade-right">
