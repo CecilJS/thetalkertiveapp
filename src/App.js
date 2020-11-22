@@ -49,7 +49,7 @@ import Privacy from './components/Privacy';
         <Route exact path="/privacy-policy" component={Privacy}>
        
         </Route>
-        <Route exact path="*" component={Home}>
+        <Route exact path="/*" component={Home}>
        
         </Route>
 
