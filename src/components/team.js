@@ -147,21 +147,6 @@ import 'aos/dist/aos.css';
                          
                    
                    </article>
-                   <article onClick={this.fourthBioDisplay } data-aos="zoom-in-right">
-                   {!fourthDisplayedBio ? (<img src={Hayley} data-aos="zoom-in-right" onClick={this.fourthBioDisplay } alt="UX-Designer-profile"/>)
-                     : 
-                         (  <div data-aos="zoom-in-right">
-                            <p data-aos="zoom-in-right" id="fourth-team-mate">
-                              Hayley is a Front End Developer who also loves photography.
-                            </p>
-                           </div>) }
-                 
-                   
-                        <p className="team-mate-title" onClick={this.fourthBioDisplay }>Hayley | Juniour Front End Developer</p>
-                        
-                         
-                   </article>
-                  
                </section>
             </div>
         )

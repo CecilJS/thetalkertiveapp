@@ -9,9 +9,6 @@ import evelynXmdProfilePicture from './images/Evelyn-icon-01-01-xmd.png';
 import somiProfilePicture from './images/Somi-icon-01-01-md.png';
 import somiSmProfilePicture from './images/Somi-icon-01-01-sm.png';
 import somiXmdProfilePicture from './images/Somi-icon-01-01-xmd.png';
-import hayleyProfilePicture from './images/Hailey-icon-01-01-md.png';
-import hayleySmProfilePicture from './images/Hailey-icon-01-01-sm.png';
-import hayleyXmdProfilePicture from './images/Hailey-icon-01-01-xmd.png';
 
 
 
@@ -52,7 +49,7 @@ import hayleyXmdProfilePicture from './images/Hailey-icon-01-01-xmd.png';
  
     render() {
 
-        const {graphicsDetail, uxDetail, webDev, softwareEng } = this.state;
+        const {graphicsDetail, uxDetail, softwareEng } = this.state;
         return (
             <div className="container" id="developer-path">
                 <h1><span>Let's</span> Collaborate</h1>
@@ -99,25 +96,6 @@ import hayleyXmdProfilePicture from './images/Hailey-icon-01-01-xmd.png';
                                 <source media="(max-width: 992px)" srcSet={evelynXmdProfilePicture} alt="We work better together" />
                                 <img src={evelynProfilePicture} data-aos="fade-right" alt="We work better together"/>
                             </picture> 
-                        </div>
-                        <div>
-                            <picture data-aos="fade-right">
-                                <source media="(max-width: 576px)" srcSet={hayleySmProfilePicture} alt="We work better together"/>
-                                <source media="(max-width: 992px)" srcSet={hayleyXmdProfilePicture} alt="We work better together" />
-                                <img src={hayleyProfilePicture} data-aos="fade-right" alt="We work better together"/>
-                            </picture>  
-                        </div>
-                        <div onClick={this.toggleWeb}>
-                          {webDev ? (<p>Web <br/>Development</p>) : (
-                            <div className="skills-heading" data-aos="fade-right">
-                                <h2>Field of Expertise</h2>
-                            <ul className="skill-set" data-aos="fade-right">
-                                <li>Web Design</li>
-                                <li>E-commerce</li>
-                                <li>Web Development</li>
-                            </ul>
-                            </div>
-                          )}
                         </div>
                         <div onClick={this.toggleSoftwareEng}>
                           {softwareEng ? (<p>Software <br/>Engineering</p>) : (
