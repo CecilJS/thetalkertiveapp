@@ -68,7 +68,7 @@ class Home extends Component {
             <section >
             <div className="container row" id="cta" >
               <div className="col l12 m12 s12">
-                <h1>Welcome to The World of <span data-aos={theAnimation} id="ourCore">{theCore}</span></h1>
+                <h1>Welcome to the world of <span data-aos={theAnimation} id="ourCore">{theCore}</span></h1>
                 <p data-aos="fade-right">Let us dive into your idea and build a concept</p>
                 <button className="waves-effect waves-light btn" data-aos="fade-right" onClick={this.showMore}><i className="material-icons right">fiber_manual_record</i>Learn more</button>
                 {moreInfo ? (<p id="learn-more" data-aos="zoom-in-right"> 
