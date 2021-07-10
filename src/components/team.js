@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Cecil from './images/Cecil-profile-icon.png';
 import Evelyn from './images/Evelyn-profile-icon.png';
 import Somi from './images/Somi-profile-icon.png';
-import Hayley from './images/Hayley-profile-icon.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -71,22 +70,9 @@ import 'aos/dist/aos.css';
    
  }
 
- fourthBioDisplay = (e) => {
- 
-  if(e.target){
-    this.setState({
-      firstDisplayedBio: false,
-      secondDisplayedBio: false,
-      thirdDisplayedBio: false,
-      fourthDisplayedBio: !this.state.fourthDisplayedBio
-    })
-  }
-  
-}
-
     render() {
 
-      const {firstDisplayedBio, secondDisplayedBio, thirdDisplayedBio, fourthDisplayedBio } = this.state;
+      const {firstDisplayedBio, secondDisplayedBio, thirdDisplayedBio} = this.state;
 
         return (
              <div>
