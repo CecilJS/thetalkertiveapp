@@ -30,6 +30,9 @@ import Privacy from './components/Privacy';
         <Route exact path="/" component={Home}>
        
         </Route>
+        <Route exact path="/home" component={Home}>
+       
+       </Route>
         <Route path="/about" component={About}>
          
         </Route>
