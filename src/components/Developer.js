@@ -98,10 +98,10 @@ import somiXmdProfilePicture from './images/Somi-icon-01-01-xmd.png';
                             </picture> 
                         </div>
                         <div onClick={this.toggleSoftwareEng}>
-                          {softwareEng ? (<p>Software <br/>Engineering</p>) : (
-                            <div className="skills-heading" data-aos="fade-right">
+                          {softwareEng ? (<p className="skill-set-aux">Software <br/>Engineering</p>) : (
+                            <div className="skills-heading-aux" data-aos="fade-right">
                                 <h2>Field of Expertise</h2>
-                            <ul className="skill-set" data-aos="fade-right">
+                            <ul className="skill-set-aux" data-aos="fade-right">
                                 <li>Mobile Apps</li>
                                 <li>Systems Design</li>
                                 <li>Web Applications</li>

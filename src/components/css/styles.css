@@ -528,9 +528,27 @@ margin-top: 10%;
     padding-top: 5%;;
 }
 
+.skills-heading-aux h2 {
+    color: #2FB4B4!important;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding-top: 5%;;
+}
+
 .skill-set {
 
     color: #fafafa;
+    font-size: 2em;
+    padding-top: 2%;
+    text-align: center;
+
+
+}
+
+
+.skill-set-aux {
+
+    color: #2FB4B4!important;
     font-size: 2em;
     padding-top: 2%;
     text-align: center;

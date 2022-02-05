@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const ourCore = ['Software Egineers', 'UX Designers', 'Graphic Designers', 'Web Developers'];
+const ourCore = ['Software Engineers', 'UX Designers', 'Graphic Designers', 'Web Developers'];
 const ourCoreAnimation = ['zoom-in-up', 'zoom-in', 'zoom-in-down', 'zoom-out-up'];
 let count = 0;
 
