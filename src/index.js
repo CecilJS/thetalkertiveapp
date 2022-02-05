@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import './index.css';
 import App from './App';
 import 'materialize-css/dist/css/materialize.min.css';
-import ScrollToTop from './components/scrollToTop';
+import ScrollToTop from './client/scrollToTop';
 
 
 
