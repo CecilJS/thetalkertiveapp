@@ -65,7 +65,7 @@ import somiXmdProfilePicture from './images/Somi-icon-01-01-xmd.png';
                            {graphicsDetail ? (<p data-aos="fade-right">Graphic<br/> Design</p>) : 
                             (
                             <div className="skills-heading" data-aos="fade-right">
-                                <h2>Field of Expertise</h2>
+                                <h2>Expertise</h2>
                             <ul className="skill-set" data-aos="fade-right">
                                 <li>Logo Design</li>
                                 <li>Business Cards</li>
@@ -78,7 +78,7 @@ import somiXmdProfilePicture from './images/Somi-icon-01-01-xmd.png';
                            {uxDetail ? (<p>UI/UX <br/>Design</p>) :
                             (
                             <div className="skills-heading" data-aos="fade-right">
-                                <h2>Field of Expertise</h2>
+                                <h2>Expertise</h2>
                             <ul className="skill-set" data-aos="fade-right">
                                
                                 <li>Prototyping</li>
@@ -100,7 +100,7 @@ import somiXmdProfilePicture from './images/Somi-icon-01-01-xmd.png';
                         <div onClick={this.toggleSoftwareEng}>
                           {softwareEng ? (<p className="skill-set-aux">Software <br/>Engineering</p>) : (
                             <div className="skills-heading-aux" data-aos="fade-right">
-                                <h2>Field of Expertise</h2>
+                                <h2>Expertise</h2>
                             <ul className="skill-set-aux" data-aos="fade-right">
                                 <li>Mobile Apps</li>
                                 <li>Systems Design</li>
